@@ -5,6 +5,7 @@
 
 *{
   box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
 }
 
 body {
@@ -37,12 +38,11 @@ body {
   margin-top: 8px;
 }
 .mobile-rightSide{
-  display: flex;
   margin-right: 20px;
-  font-size: 30px;
   height: 28px;
-  gap: 20px;
-
+}
+.locationLogo{
+  font-size: 30px;
 }
 
 .hiddenMobile{
