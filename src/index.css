@@ -23,7 +23,7 @@ body {
   top: 40px;
   position: absolute;
   width: 100%;
-  height: 4.2rem;
+  height: 4.3rem;
   box-shadow: 1px 4px 6px 0 rgb(0 0 0 / 31%);
 }
 .bottom-header-items{
@@ -33,8 +33,8 @@ body {
   color: var(--homeBlue);
 }
 .main-logo{
-  margin-left: 20px;
-  margin-top: 5px;
+  margin-left: 15px;
+  margin-top: 8px;
 }
 .mobile-rightSide{
   display: flex;
