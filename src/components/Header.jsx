@@ -1,7 +1,22 @@
 import logo from '../imgs/rosas-logo1.png'
 import '../CSS/dropdown.css'
+import { useState } from 'react';
 
 function Header() {
+
+const [checked, setChecked] = useState(false);
+const styles = {
+  dropdownNav:{
+    top: checked ? '20px' : null
+  },
+  dropdownBtn:{
+    top: checked ? '52px' : null
+  }
+}
+
+const handleCheckbox = () => {
+  setChecked(!checked)
+}
 
 return (
 <header className='Header'>
@@ -14,7 +29,7 @@ return (
     </nav>
   </div>
 
-  <div className="bottom-header-container">
+  <div style={styles.dropdownNav} className="bottom-header-container">
     <div className="bottom-header-items">
       <a href='#Home' className="main-logo">
         <img width='150px' src={logo} alt='logo' className='logo'></img>
@@ -25,12 +40,9 @@ return (
 
 
         {/* HAMBURGER MENU */}
-        {/* <nav className="hamburger-mobile-container">
-          <i class="fa-solid fa-bars"></i>
-        </nav> */}
         <div className="hamburger-menu">
           <input type="checkbox" id='menu__toggle' />
-          <label class="menu__btn" htmlFor="menu__toggle">
+          <label style={styles.dropdownBtn} onClick={handleCheckbox} class="menu__btn" htmlFor="menu__toggle">
             <span></span>
           </label>
 

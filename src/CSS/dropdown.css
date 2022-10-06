@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Nunito&family=Raleway&display=swap');
 :root {
     --homeBlue: #41b7c3;
 }
@@ -43,7 +43,7 @@
     width: 100%;
     height: 2px;
     background-color: var(--homeBlue);
-    transition-duration: .25s;
+    transition-duration: .35s;
 }
 
 .menu__btn>span::before {
@@ -59,27 +59,28 @@
 .menu__box {
     display: block;
     position: fixed;
-    top: 6.8rem;
+    top: 5.5rem;
     right: -100%;
-    width: 300px;
+    width: 375px;
     height: 50rem;
     margin: 0;
-    padding: 80px 0;
+    padding: 5px 0;
     list-style: none;
-    background-color: #ECEFF1;
+    background-color: #ffffff;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
-    transition-duration: .25s;
+    transition-duration: .35s;
 }
 
 .menu__item {
     display: block;
-    padding: 12px 24px;
+    padding: 12px 14px;
     color: #333;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    border-bottom: 2px dashed black;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
     font-weight: 600;
     text-decoration: none;
-    transition-duration: .25s;
+    transition-duration: .35s;
 }
 
 .menu__item:hover {
