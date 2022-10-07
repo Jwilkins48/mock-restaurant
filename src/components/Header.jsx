@@ -44,8 +44,8 @@ return (
         {/* LOCATIONS DROPDOWN */}
           <label className='location-button' htmlFor="locationBtn"><i class="fa-solid fa-location-dot locationLogo"></i></label>
           <input type="checkbox" id='locationBtn' />
-          <div className="location-label-container">
-            <h3 className='locations-label hiddenMobile'>LOCATIONS</h3>
+          <div className=" hiddenMobile location-label-container">
+            <h3 className='locations-label'>LOCATIONS</h3>
             <i class=" down-arrow fa-solid fa-sort-down"></i>
           </div>
         

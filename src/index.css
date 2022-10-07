@@ -54,8 +54,12 @@ body {
 
 @media(min-width: 1280px){
 
-  .locations-label{
+  .location-label-container{
     display: block;
+
+  }
+
+  .locations-label{
     position: fixed;
     left: 48.5rem;
     top: 5.5rem;
