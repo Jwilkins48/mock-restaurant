@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Nunito&family=Raleway&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap');
 :root {
     --homeBlue: #41b7c3;
 
@@ -115,6 +115,7 @@
 /* location dropdown */
 
 .slide {
+    padding-left: 0;
     text-align: center;
     display: block;
     opacity: 0;
@@ -147,6 +148,7 @@
 
 .search-location {
     font-size: 19px;
+    margin-bottom: 8px;
     color: #333;
     font-weight: 600;
 }
@@ -156,7 +158,6 @@
     color: #ef5da2;
     width: 270px;
     height: 39px;
-    padding-right: 44px;
     border-width: 1px;
     font-size: 19px;
     line-height: 1.3px;
@@ -167,16 +168,36 @@
 }
 
 .goBtn{
-    padding: 10px 5px 8px 5px;
+    padding: 10px 8px 8px 8px;
     border-left: none;
     background-color: rgba(0,163,180,.3);
-    font-weight: bolder;
+    font-weight: 900;
     font-size: 15px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .current-location{
-    color: #333;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    margin-top: 15px;
 }
 .current-location span{
     color: var(--homeBlue);
+}
+.location-arrow{
+    font-size: 25px;
+}
+
+/* DESKTOP */
+@media(min-width: 1280px){
+    .menu__btn{
+        display: none;
+    }
+
+    .location-button{
+        left: 46rem;
+    }
 }

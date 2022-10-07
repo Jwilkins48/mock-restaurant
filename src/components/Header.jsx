@@ -38,13 +38,17 @@ return (
         <img width='150px' src={logo} alt='logo' className='logo'></img>
       </a>
 
+      <hr className='logo-hr hiddenMobile'/>
+
       <div className="mobile-rightSide">
         {/* LOCATIONS DROPDOWN */}
-        {/* <i class="fa-solid fa-location-dot"></i> */}
-
-
           <label className='location-button' htmlFor="locationBtn"><i class="fa-solid fa-location-dot locationLogo"></i></label>
           <input type="checkbox" id='locationBtn' />
+          <div className="location-label-container">
+            <h3 className='locations-label hiddenMobile'>LOCATIONS</h3>
+            <i class=" down-arrow fa-solid fa-sort-down"></i>
+          </div>
+        
 
           <ul className='slide'>
             <div className="slide-container">
@@ -53,11 +57,11 @@ return (
                 <input placeholder={'city & state or zip'} type="text" id="location-input" />
                 <button className='goBtn'>GO</button>
               </div>
-              <h4 className='current-location'><span><i class="fa-solid fa-location-arrow"></i></span> USE CURRENT LOCATION</h4>
+              <h4 className='current-location'><span><i class="fa-solid fa-location-arrow location-arrow"></i></span> USE CURRENT LOCATION</h4>
             </div>
           </ul>
 
-
+          <hr className='logo-hr hr2 hiddenMobile'/>
 
         {/* HAMBURGER MENU */}
         <div className="hamburger-menu">
