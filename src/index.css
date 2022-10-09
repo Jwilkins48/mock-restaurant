@@ -56,18 +56,19 @@ body {
 
   .location-label-container{
     display: block;
-
   }
 
   .locations-label{
     position: fixed;
-    left: 48.5rem;
+    left: 48.2rem;
     top: 5.5rem;
     color: #333;
     font-size: 18px;
+    cursor: pointer;
   }
 
   .down-arrow{
+    cursor: pointer;
     color: var(--homeBlue);
     position: fixed;
     left: 55.5rem;
