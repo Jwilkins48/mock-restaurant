@@ -46,14 +46,16 @@ return (
       <div className="mobile-rightSide">
         {/* LOCATIONS DROPDOWN */}
         <button onClick={handleButtonClick} id='locationBtn'></button>
-        <div onMouseOver={()=> setLocationChecked(true)} onMouseLeave={() => setLocationChecked(false)}
+        <div 
           className="locations-hover-container">
           <label className='location-button' htmlFor="locationBtn"><i
               class="fa-solid fa-location-dot locationLogo"></i></label>
+          <div onMouseOver={()=> setLocationChecked(true)} onMouseLeave={() => setLocationChecked(false)}>
           <div className=" hiddenMobile location-label-container">
             <h3 className='locations-label'>LOCATIONS</h3>
             <i onClick={handleButtonClick} class="down-arrow fa-solid fa-sort-down"></i>
           </div>
+          
 
           <ul id={locationChecked ? 'location-pressed' : 'location-notPressed' } className='slide'>
             <div className="slide-container">
@@ -67,6 +69,7 @@ return (
                 CURRENT LOCATION</h4>
             </div>
           </ul>
+          </div>
 
           <hr className='logo-hr hr2 hiddenMobile' />
         </div>

@@ -133,6 +133,10 @@
     opacity: 0;
     transition-duration: .35s;
 }
+#location-pressed{
+    opacity: 1;
+    transition-duration: .35s;
+}
 .locations-hover-container:hover .slide{
     z-index: 1;
     transition-duration: .35s;
@@ -198,6 +202,13 @@
 
 /* DESKTOP */
 @media(min-width: 1280px){
+
+    .locations-hover-container:hover .slide{
+        z-index: 1;
+        transition-duration: .35s;
+        opacity: 1;
+    }
+    
     #slide{
         opacity: 1;
         transition-duration: .35s;
