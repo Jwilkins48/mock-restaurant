@@ -56,8 +56,9 @@ return (
             <i onClick={handleButtonClick} class="down-arrow fa-solid fa-sort-down"></i>
           </div>
           
-
+          {/* <span className="location_arrow_box"></span> */}
           <ul id={locationChecked ? 'location-pressed' : 'location-notPressed' } className='slide'>
+          <span className="location_arrow_box"></span>
             <div className="slide-container">
               <p className='search-location'>Search</p>
               <div className='input-container'>

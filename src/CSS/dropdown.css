@@ -203,6 +203,40 @@
 /* DESKTOP */
 @media(min-width: 1280px){
 
+    /* UNDER NAV ARROW */
+    .location_arrow_box {
+        position: relative;
+        background: #fff;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border: none;
+        top: -3px;
+    }
+    .location_arrow_box:after, .location_arrow_box:before {
+        top: 100%;
+        left: 50%;
+        border: solid transparent;
+        content: "";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+    }
+    
+    .location_arrow_box:after {
+        border-color: #88b7d500;
+        border-top-color: #fff;
+        border-width: 20px;
+        margin-left: -20px;
+    }
+    .location_arrow_box:before {
+        border-color: #ffffff00;
+        border-top-color: #fff;
+        border-width: 20px;
+        margin-left: -20px;
+    }
+
+
+
     .locations-hover-container:hover .slide{
         z-index: 1;
         transition-duration: .35s;
@@ -212,6 +246,7 @@
     #slide{
         opacity: 1;
         transition-duration: .35s;
+        
     }
     .menu__btn{
         display: none;
@@ -224,5 +259,6 @@
         top: 6.5rem;
         left: 35rem;
         width: 25%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
 }
