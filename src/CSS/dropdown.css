@@ -171,6 +171,7 @@
     font-size: 19px;
     line-height: 1.3px;
     border-right: none;
+    
 }
 #location-input:focus{
     border: 1px solid #ef5da2;
@@ -209,10 +210,11 @@
         background: #fff;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         border: none;
-        top: -3px;
+        top: 4px;
+        
     }
     .location_arrow_box:after, .location_arrow_box:before {
-        top: 100%;
+        top: -2.2rem;
         left: 50%;
         border: solid transparent;
         content: "";
@@ -246,19 +248,28 @@
     #slide{
         opacity: 1;
         transition-duration: .35s;
-        
     }
     .menu__btn{
         display: none;
     }
-
+    .search-container{
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        
+    }
+    .search-location{
+        margin-bottom: 15px;
+    }
     .location-button{
         left: 46rem;
     }
     .slide{
         top: 6.5rem;
-        left: 35rem;
-        width: 25%;
+        left: 36.6rem;
+        width: 465px;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        padding: 30px 35px 5px;
+
     }
 }

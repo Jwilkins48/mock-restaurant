@@ -60,11 +60,15 @@ return (
           <ul id={locationChecked ? 'location-pressed' : 'location-notPressed' } className='slide'>
           <span className="location_arrow_box"></span>
             <div className="slide-container">
-              <p className='search-location'>Search</p>
-              <div className='input-container'>
-                <input placeholder={'city & state or zip'} type="text" id="location-input" />
-                <button className='goBtn'>GO</button>
+
+              <div className="search-container">
+                <p className='search-location'>Search</p>
+                <div className='input-container'>
+                  <input placeholder={'city & state or zip'} type="text" id="location-input" />
+                  <button className='goBtn'>GO</button>
+                </div>
               </div>
+              
               <h4 className='current-location'><span><i class="fa-solid fa-location-arrow location-arrow"></i></span>
                 USE
                 CURRENT LOCATION</h4>
