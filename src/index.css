@@ -53,6 +53,15 @@ body {
 
 
 @media(min-width: 1280px){
+  /* NAVBAR MENU ITEMS */
+  .desktop-menu-item{
+    transition: .25s ease-in-out;
+  }
+  .desktop-menu-item:hover{
+    color: var(--fontColor);
+    -ms-transform: rotate(-15deg); /* IE 9 */
+    transform: rotate(-15deg);
+  }
 
   .location-label-container{
     display: block;

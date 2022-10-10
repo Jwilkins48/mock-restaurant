@@ -100,12 +100,12 @@ return (
       {/* NAV HIDDEN IN MOBILE */}
       <nav className='main-navList-container hiddenMobile'>
         <ul className='navList'>
-          <li>MENU</li>
-          <li>CATERING</li>
-          <li>GIFT CARDS</li>
-          <li>CAREERS</li>
-          <li>VIP</li>
-          <li>NUTRITION</li>
+          <li className='desktop-menu-item'>MENU</li>
+          <li className='desktop-menu-item'>CATERING</li>
+          <li className='desktop-menu-item'>GIFT CARDS</li>
+          <li className='desktop-menu-item'>CAREERS</li>
+          <li className='desktop-menu-item'>VIP</li>
+          <li className='desktop-menu-item'>NUTRITION</li>
         </ul>
       </nav>
     </div>
