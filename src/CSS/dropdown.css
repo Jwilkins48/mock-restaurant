@@ -249,13 +249,14 @@
 
     /* MENU DROPDOWN */
     .menu-dropdown-content {
+
         align-items: center;
         justify-content: center;
         visibility: hidden;
         top: 6rem;
         left: -58rem;
         width: 130rem;
-        height: 15rem;
+        height: 16rem;
         opacity: 0;
         pointer-events: none;
         position: absolute;
@@ -266,13 +267,15 @@
         z-index: -1;
         box-shadow: inset 1px 4px 6px 0 rgb(0 0 0 / 31%);
     }
-    .list-menu li{
+    .list-align{
         list-style-type: none;
         display: flex;
+        text-align: center;
+        color: #fff;
         flex-direction: column;
-        margin: 20px;
-
+        margin: 30px 10px;
     }
+
     .list{
         position: absolute;
         text-align: center;

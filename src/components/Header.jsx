@@ -117,29 +117,27 @@ return (
               <div className="menu-dropdown-content">
                 <ul className='list-menu'>
 
-                  <li><a href='#'><figure><img src={dinners} alt="#" /></figure>
-                  <span className='list'>DINNERS</span></a></li>
+                  <li className='list-align'><a href='#'><figure><img src={dinners} alt="#" /></figure>
+                  </a>DINNERS</li>
 
-                  <li><a href='#'><figure><img src={individual} alt="#" /></figure>
-                  <span className='list'>INDIVIDUAL ITEMS</span></a></li>
+                  <li className='list-align'><a href='#'><figure><img src={individual} alt="#" /></figure>
+                  </a>INDIVIDUAL ITEMS</li>
 
-                  <li><a href='#'><figure><img src={groupMeals} alt="#" /></figure>
-                  <span className='list'>FAMILY MEALS</span></a></li>
+                  <li className='list-align'><a href='#'><figure><img src={groupMeals} alt="#" /></figure>
+                  </a>FAMILY MEALS</li>
 
-                  <li><a href='#'><figure><img src={kids} alt="#" /></figure>
-                  <span className='list'>KIDS</span></a></li>
+                  <li className='list-align'><a href='#'><figure><img src={kids} alt="#" /></figure>
+                  </a>KIDS</li>
 
-                  <li><a href='#'><figure><img src={breakfast} alt="#" /></figure>
-                  <span className='list'>BREAKFAST</span></a></li>
+                  <li className='list-align'><a href='#'><figure><img src={breakfast} alt="#" /></figure>
+                  </a>BREAKFAST</li>
 
-                  <li><a href='#'><figure><img src={desserts} alt="#" /></figure>
-                  <span className='list'>DESSERTS & DRINKS</span></a></li>
+                  <li className='list-align'><a href='#'><figure><img src={desserts} alt="#" /></figure>
+                  </a>DESSERTS & DRINKS</li>
 
                 </ul>
               </div>
             </li>
-
-
 
           <li className='desktop-menu-item'>CATERING</li>
           <li className='desktop-menu-item'>GIFT CARDS</li>
