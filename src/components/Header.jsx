@@ -1,6 +1,12 @@
 import logo from '../imgs/rosas-logo1.png'
 import '../CSS/dropdown.css'
 import { useState } from 'react';
+import dinners from '../imgs/_Dinners.png'
+import individual from '../imgs/_individual_items.png'
+import groupMeals from '../imgs/_group_meals.png'
+import kids from '../imgs/_Kids4.png'
+import breakfast from '../imgs/_breakfast.png'
+import desserts from '../imgs/_Desserts.png'
 
 function Header() {
 const [checked, setChecked] = useState(false);
@@ -110,23 +116,24 @@ return (
               {/* DROPDOWN */}
               <div className="menu-dropdown-content">
                 <ul className='list-menu'>
-                  <li><a href='#'><figure><img src="#" alt="#" /></figure>
-                  <span>DINNERS</span></a></li>
 
-                  <li><a href='#'><figure><img src="#" alt="#" /></figure>
-                  <span>INDIVIDUAL ITEMS</span></a></li>
+                  <li><a href='#'><figure><img src={dinners} alt="#" /></figure>
+                  <span className='list'>DINNERS</span></a></li>
 
-                  <li><a href='#'><figure><img src="#" alt="#" /></figure>
-                  <span>FAMILY MEALS</span></a></li>
+                  <li><a href='#'><figure><img src={individual} alt="#" /></figure>
+                  <span className='list'>INDIVIDUAL ITEMS</span></a></li>
 
-                  <li><a href='#'><figure><img src="#" alt="#" /></figure>
-                  <span>KIDS</span></a></li>
+                  <li><a href='#'><figure><img src={groupMeals} alt="#" /></figure>
+                  <span className='list'>FAMILY MEALS</span></a></li>
 
-                  <li><a href='#'><figure><img src="#" alt="#" /></figure>
-                  <span>BREAKFAST</span></a></li>
+                  <li><a href='#'><figure><img src={kids} alt="#" /></figure>
+                  <span className='list'>KIDS</span></a></li>
 
-                  <li><a href='#'><figure><img src="#" alt="#" /></figure>
-                  <span>DESSERTS & DRINKS</span></a></li>
+                  <li><a href='#'><figure><img src={breakfast} alt="#" /></figure>
+                  <span className='list'>BREAKFAST</span></a></li>
+
+                  <li><a href='#'><figure><img src={desserts} alt="#" /></figure>
+                  <span className='list'>DESSERTS & DRINKS</span></a></li>
 
                 </ul>
               </div>

@@ -184,10 +184,44 @@
     border: 1px solid #ef5da2;
 }
 
+
+/* ARROW UNDER LOCATION DROPDOWN */
+.location_arrow_box {
+    position: relative;
+	background: #88b7d5;
+	border: 4px solid #c2e1f5;
+
+}
+.location_arrow_box:after, .location_arrow_box:before {
+    top: -155%;
+	left: 50%;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.location_arrow_box:after {
+	border-color: #ffffff00;
+	border-top-color: #ffffff;
+	border-width: 20px;
+	margin-left: -20px;
+}
+.location_arrow_box:before {
+	border-color: #ffffff00;
+	border-top-color: #ffffff;
+	border-width: 22px;
+	margin-left: -22px;
+}
+
+
+
 .goBtn {
     padding: 10px 8px 8px 8px;
     border-left: none;
-    background-color: rgba(0, 163, 180, .3);
+    background-color: #ffffff4d;
     font-weight: 900;
     font-size: 15px;
     font-family: 'Roboto', sans-serif;
@@ -215,23 +249,61 @@
 
     /* MENU DROPDOWN */
     .menu-dropdown-content {
+        align-items: center;
+        justify-content: center;
         visibility: hidden;
         top: 6rem;
         left: -58rem;
         width: 130rem;
+        height: 15rem;
         opacity: 0;
         pointer-events: none;
         position: absolute;
         background-color: #f9f9f9;
+        background-image: url('../imgs/menu-dropdown.png');
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         transition: 0.3s;
         z-index: -1;
         box-shadow: inset 1px 4px 6px 0 rgb(0 0 0 / 31%);
     }
+    .list-menu li{
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+
+    }
+    .list{
+        position: absolute;
+        text-align: center;
+        transition: .3s;
+        color: #fff;
+        padding-left: 38px;
+        text-align: center;
+    }
+    .list:hover{
+        background: url('../imgs/brush-bg@2x.png');
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
 
     .list-menu{
         display: flex;
+        justify-content: center;
+        align-items: center;
     }
+    .list-menu::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 142px;
+        background-image: url('../imgs/menu-overlay.png');
+        background-size: auto 100%;
+    }
+
 
     .dropdown:hover .menu-dropdown-content {
         visibility: visible;
