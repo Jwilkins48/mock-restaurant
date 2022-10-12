@@ -1,11 +1,10 @@
-
 :root {
   --homeBlue: #41b7c3;
 
   --fontColor: #ef5da2;
 }
 
-*{
+* {
   box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
 }
@@ -15,13 +14,14 @@ body {
   padding: 0;
 }
 
-#Home{
+#Home {
   background-color: var(--homeBlue);
   height: 100vh;
   background-image: url('../src/imgs/rosas-home.png');
   background-size: cover;
 }
-.bottom-header-container{
+
+.bottom-header-container {
   background-color: white;
   top: 40px;
   position: absolute;
@@ -29,45 +29,53 @@ body {
   height: 4.3rem;
   box-shadow: 1px 4px 6px 0 rgb(0 0 0 / 31%);
 }
-.bottom-header-items{
+
+.bottom-header-items {
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: var(--homeBlue);
 }
-.main-logo{
+
+.main-logo {
   margin-left: 15px;
   margin-top: 8px;
 }
-.mobile-rightSide{
+
+.mobile-rightSide {
   margin-right: 20px;
   height: 28px;
 }
-.locationLogo{
+
+.locationLogo {
   font-size: 30px;
 }
 
-.hiddenMobile{
+.hiddenMobile {
   display: none;
 }
 
 
-@media(min-width: 1280px){
+@media(min-width: 1280px) {
+
   /* NAVBAR MENU ITEMS */
-  .desktop-menu-item{
+  .desktop-menu-item {
     transition: .25s ease-in-out;
   }
-  .desktop-menu-item:hover{
-    color: var(--fontColor);
-    -ms-transform: rotate(-15deg); /* IE 9 */
-    transform: rotate(-15deg);
-  }
 
-  .location-label-container{
+  .desktop-menu-item:hover {
+    color: var(--fontColor);
+    -ms-transform: rotate(-15deg);
+    /* IE 9 */
+    transform: rotate(-15deg); 
+  } 
+
+
+  .location-label-container {
     display: block;
   }
 
-  .locations-label{
+  .locations-label {
     position: fixed;
     left: 48.2rem;
     top: 5.5rem;
@@ -76,7 +84,7 @@ body {
     cursor: pointer;
   }
 
-  .down-arrow{
+  .down-arrow {
     cursor: pointer;
     color: var(--homeBlue);
     position: fixed;
@@ -85,19 +93,19 @@ body {
     font-size: 28px;
   }
 
-  .bottom-header-container{
+  .bottom-header-container {
     top: 55px;
     height: 7.5rem;
     display: flex;
   }
 
-  .top-header{
+  .top-header {
     display: flex;
     justify-content: flex-end;
     padding-right: 33rem;
   }
 
-  .logo-hr{
+  .logo-hr {
     background-color: #bfbfbf;
     width: 3px;
     height: 82px;
@@ -105,23 +113,28 @@ body {
     position: fixed;
     display: block;
   }
-  .hr2{
+
+  .hr2 {
     left: 58rem;
     top: 4.1rem;
   }
 
-  .main-logo{
+  .main-logo {
     position: fixed;
     left: 26.5rem;
   }
-  .logo{
+
+  .logo {
     width: 213px;
   }
 
-  .main-navList-container{
+  .main-navList-container {
     display: block;
   }
-  .navList{
+
+
+
+  .navList {
     position: fixed;
     cursor: pointer;
     left: 58rem;
@@ -134,7 +147,7 @@ body {
     font-weight: bolder;
   }
 
-  .top-navList{
+  .top-navList {
     width: 20%;
     margin: 0;
     list-style-type: none;

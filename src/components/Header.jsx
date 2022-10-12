@@ -5,19 +5,20 @@ import { useState } from 'react';
 function Header() {
 const [checked, setChecked] = useState(false);
 const [locationChecked, setLocationChecked] = useState(false);
+
 const styles = {
-  dropdownNav:{
-    top: checked ? '10px' : null,
-    transitionDuration: '.35s',
-  },
-  dropdownBtn:{
-    top: checked ? '42px' : null,
-    transitionDuration: '.35s',
-  }
+dropdownNav:{
+top: checked ? '10px' : null,
+transitionDuration: '.35s',
+},
+dropdownBtn:{
+top: checked ? '42px' : null,
+transitionDuration: '.35s',
+}
 }
 
 const handleCheckbox = () => {
-  setChecked(!checked)
+setChecked(!checked)
 }
 // LOCATION DROPDOWN BTN
 const handleButtonClick = () => {
@@ -46,34 +47,32 @@ return (
       <div className="mobile-rightSide">
         {/* LOCATIONS DROPDOWN */}
         <button onClick={handleButtonClick} id='locationBtn'></button>
-        <div 
-          className="locations-hover-container">
+        <div className="locations-hover-container">
           <label className='location-button' htmlFor="locationBtn"><i
               class="fa-solid fa-location-dot locationLogo"></i></label>
           <div onMouseOver={()=> setLocationChecked(true)} onMouseLeave={() => setLocationChecked(false)}>
-          <div className=" hiddenMobile location-label-container">
-            <h3 className='locations-label'>LOCATIONS</h3>
-            <i onClick={handleButtonClick} class="down-arrow fa-solid fa-sort-down"></i>
-          </div>
-          
-          {/* <span className="location_arrow_box"></span> */}
-          <ul id={locationChecked ? 'location-pressed' : 'location-notPressed' } className='slide'>
-          <span className="location_arrow_box"></span>
-            <div className="slide-container">
-
-              <div className="search-container">
-                <p className='search-location'>Search</p>
-                <div className='input-container'>
-                  <input placeholder={'city & state or zip'} type="text" id="location-input" />
-                  <button className='goBtn'>GO</button>
-                </div>
-              </div>
-              
-              <h4 className='current-location'><span><i class="fa-solid fa-location-arrow location-arrow"></i></span>
-                USE
-                CURRENT LOCATION</h4>
+            <div className=" hiddenMobile location-label-container">
+              <h3 className='locations-label'>LOCATIONS</h3>
+              <i onClick={handleButtonClick} class="down-arrow fa-solid fa-sort-down"></i>
             </div>
-          </ul>
+
+            <ul id={locationChecked ? 'location-pressed' : 'location-notPressed' } className='slide'>
+            <span className="location_arrow_box"></span>
+              <div className="slide-container">
+
+                <div className="search-container">
+                  <p className='search-location'>Search</p>
+                  <div className='input-container'>
+                    <input placeholder={'city & state or zip'} type="text" id="location-input" />
+                    <button className='goBtn'>GO</button>
+                  </div>
+                </div>
+
+                <h4 className='current-location'><span><i class="fa-solid fa-location-arrow location-arrow"></i></span>
+                  USE
+                  CURRENT LOCATION</h4>
+              </div>
+            </ul>
           </div>
 
           <hr className='logo-hr hr2 hiddenMobile' />
@@ -87,7 +86,8 @@ return (
           </label>
 
           <ul className='menu__box'>
-            <li><a className='menu menu__item' href='#'>MENU <i class="fa-solid fa-greater-than more-menu"></i></a></li> {/* Dropdown */}
+            <li><a className='menu menu__item' href='#'>MENU <i class="fa-solid fa-greater-than more-menu"></i></a></li>
+            {/* Dropdown */}
             <li><a className='menu__item' href='#'>CATERING</a></li>
             <li><a className='menu__item' href='#'>GIFT CARDS</a></li>
             <li><a className='menu__item' href='#'>CAREERS</a></li>
@@ -105,7 +105,35 @@ return (
       {/* NAV HIDDEN IN MOBILE */}
       <nav className='main-navList-container hiddenMobile'>
         <ul className='navList'>
-          <li className='desktop-menu-item'>MENU</li>
+            <li className=' dropdown'>
+              <div className='desktop-menu-item'>MENU</div>
+              {/* DROPDOWN */}
+              <div className="menu-dropdown-content">
+                <ul className='list-menu'>
+                  <li><a href='#'><figure><img src="#" alt="#" /></figure>
+                  <span>DINNERS</span></a></li>
+
+                  <li><a href='#'><figure><img src="#" alt="#" /></figure>
+                  <span>INDIVIDUAL ITEMS</span></a></li>
+
+                  <li><a href='#'><figure><img src="#" alt="#" /></figure>
+                  <span>FAMILY MEALS</span></a></li>
+
+                  <li><a href='#'><figure><img src="#" alt="#" /></figure>
+                  <span>KIDS</span></a></li>
+
+                  <li><a href='#'><figure><img src="#" alt="#" /></figure>
+                  <span>BREAKFAST</span></a></li>
+
+                  <li><a href='#'><figure><img src="#" alt="#" /></figure>
+                  <span>DESSERTS & DRINKS</span></a></li>
+
+                </ul>
+              </div>
+            </li>
+
+
+
           <li className='desktop-menu-item'>CATERING</li>
           <li className='desktop-menu-item'>GIFT CARDS</li>
           <li className='desktop-menu-item'>CAREERS</li>

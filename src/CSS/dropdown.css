@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Nunito&family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap');
+
 :root {
     --homeBlue: #41b7c3;
 
@@ -112,6 +113,8 @@
 }
 
 
+
+
 /* location dropdown */
 
 .slide {
@@ -127,17 +130,20 @@
     background-color: #ffffffb5;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
     transition-duration: .35s;
-    
+
 }
-#location-notPressed{
+
+#location-notPressed {
     opacity: 0;
     transition-duration: .35s;
 }
-#location-pressed{
+
+#location-pressed {
     opacity: 1;
     transition-duration: .35s;
 }
-.locations-hover-container:hover .slide{
+
+.locations-hover-container:hover .slide {
     z-index: 1;
     transition-duration: .35s;
     opacity: 1;
@@ -171,22 +177,23 @@
     font-size: 19px;
     line-height: 1.3px;
     border-right: none;
-    
+
 }
-#location-input:focus{
+
+#location-input:focus {
     border: 1px solid #ef5da2;
 }
 
-.goBtn{
+.goBtn {
     padding: 10px 8px 8px 8px;
     border-left: none;
-    background-color: rgba(0,163,180,.3);
+    background-color: rgba(0, 163, 180, .3);
     font-weight: 900;
     font-size: 15px;
     font-family: 'Roboto', sans-serif;
 }
 
-.current-location{
+.current-location {
     color: rgb(0, 0, 0);
     display: flex;
     justify-content: center;
@@ -194,77 +201,78 @@
     gap: 3px;
     margin-top: 15px;
 }
-.current-location span{
+
+.current-location span {
     color: var(--homeBlue);
 }
-.location-arrow{
+
+.location-arrow {
     font-size: 25px;
 }
 
 /* DESKTOP */
-@media(min-width: 1280px){
+@media(min-width: 1280px) {
 
-    /* UNDER NAV ARROW */
-    .location_arrow_box {
-        position: relative;
-        background: #fff;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        border: none;
-        top: 4px;
-        
-    }
-    .location_arrow_box:after, .location_arrow_box:before {
-        top: -2.2rem;
-        left: 50%;
-        border: solid transparent;
-        content: "";
-        height: 0;
-        width: 0;
-        position: absolute;
+    /* MENU DROPDOWN */
+    .menu-dropdown-content {
+        visibility: hidden;
+        top: 6rem;
+        left: -58rem;
+        width: 130rem;
+        opacity: 0;
         pointer-events: none;
-    }
-    
-    .location_arrow_box:after {
-        border-color: #88b7d500;
-        border-top-color: #fff;
-        border-width: 20px;
-        margin-left: -20px;
-    }
-    .location_arrow_box:before {
-        border-color: #ffffff00;
-        border-top-color: #fff;
-        border-width: 20px;
-        margin-left: -20px;
+        position: absolute;
+        background-color: #f9f9f9;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        z-index: -1;
+        box-shadow: inset 1px 4px 6px 0 rgb(0 0 0 / 31%);
     }
 
+    .list-menu{
+        display: flex;
+    }
+
+    .dropdown:hover .menu-dropdown-content {
+        visibility: visible;
+        opacity: 1;
+        top: 4rem;
+
+    }
+    /* MENU DROPDOWN END */
 
 
-    .locations-hover-container:hover .slide{
+    .locations-hover-container:hover .slide {
         z-index: 1;
         transition-duration: .35s;
         opacity: 1;
     }
-    
-    #slide{
+
+    #slide {
         opacity: 1;
         transition-duration: .35s;
     }
-    .menu__btn{
+
+    .menu__btn {
         display: none;
     }
-    .search-container{
+
+    .search-container {
         display: flex;
         gap: 5px;
         align-items: center;
-        
+
     }
-    .search-location{
+
+    .search-location {
         margin-bottom: 15px;
     }
-    .location-button{
+
+    .location-button {
         left: 46rem;
     }
-    .slide{
+
+    .slide {
         top: 6.5rem;
         left: 36.6rem;
         width: 465px;
