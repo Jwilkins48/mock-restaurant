@@ -12,6 +12,8 @@ function Header() {
 const [checked, setChecked] = useState(false);
 const [locationChecked, setLocationChecked] = useState(false);
 
+const [menuOpen, setMenuOpen] = useState(false);
+
 const styles = {
 dropdownNav:{
 top: checked ? '10px' : null,
@@ -87,8 +89,8 @@ return (
         {/* HAMBURGER MENU */}
         <div className="hamburger-menu">
           <input checked={checked} type="checkbox" id='menu__toggle' />
-          <label style={styles.dropdownBtn} onClick={handleCheckbox} class="menu__btn" htmlFor="menu__toggle">
-            <span></span>
+          <label style={styles.dropdownBtn} class="menu__btn" htmlFor="menu__toggle">
+            <span onClick={handleCheckbox}></span>
           </label>
 
           <ul className='menu__box'>
@@ -111,10 +113,10 @@ return (
       {/* NAV HIDDEN IN MOBILE */}
       <nav className='main-navList-container hiddenMobile'>
         <ul className='navList'>
-            <li className=' dropdown'>
-              <div className='desktop-menu-item'>MENU</div>
+            <div onMouseOver={()=> setMenuOpen(true)} onMouseLeave={() => setMenuOpen(false)} className='dropdown'>
+              <div className='desktop-menu-item menu'>MENU</div>
               {/* DROPDOWN */}
-              <div className="menu-dropdown-content">
+              <div onMouseOver={()=> setMenuOpen(true)} onMouseLeave={() => setMenuOpen(false)} id={menuOpen ? 'menu-open' : 'menu-notOpen' } className="menu-dropdown-content">
                 <ul className='list-menu'>
 
                   <li className='list-align'><a href='#'><figure><img src={dinners} alt="#" /></figure>
@@ -137,7 +139,7 @@ return (
 
                 </ul>
               </div>
-            </li>
+            </div>
 
           <li className='desktop-menu-item'>CATERING</li>
           <li className='desktop-menu-item'>GIFT CARDS</li>

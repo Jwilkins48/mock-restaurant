@@ -258,7 +258,6 @@
         width: 130rem;
         height: 16rem;
         opacity: 0;
-        pointer-events: none;
         position: absolute;
         background-color: #f9f9f9;
         background-image: url('../imgs/menu-dropdown.png');
@@ -307,13 +306,12 @@
         background-size: auto 100%;
     }
 
-
-    .dropdown:hover .menu-dropdown-content {
+    #menu-open{
         visibility: visible;
         opacity: 1;
         top: 4rem;
-
     }
+
     /* MENU DROPDOWN END */
 
 
