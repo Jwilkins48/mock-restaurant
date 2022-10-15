@@ -13,24 +13,31 @@ const [checked, setChecked] = useState(false);
 const [locationChecked, setLocationChecked] = useState(false);
 
 const [menuOpen, setMenuOpen] = useState(false);
+const [menuSideOpen, setMenuSideOpen] = useState(false);
+
 
 const styles = {
-dropdownNav:{
-top: checked ? '10px' : null,
-transitionDuration: '.35s',
-},
-dropdownBtn:{
-top: checked ? '42px' : null,
-transitionDuration: '.35s',
-}
+  dropdownNav:{
+    top: checked ? '10px' : null,
+    transitionDuration: '.35s',
+  },
+  dropdownBtn:{
+    top: checked ? '42px' : null,
+    transitionDuration: '.35s',
+  }
 }
 
 const handleCheckbox = () => {
-setChecked(!checked)
+  setChecked(!checked)
 }
 // LOCATION DROPDOWN BTN
 const handleButtonClick = () => {
-setLocationChecked(!locationChecked)
+  setLocationChecked(!locationChecked)
+}
+
+// SIDE MENU DROPDOWN BTN
+const handleSideOpen = () => {
+  setMenuSideOpen(!menuSideOpen)
 }
 
 return (
@@ -38,8 +45,8 @@ return (
   <div className="top-header-container">
     <nav className='top-header'>
       <ul className='top-navList hiddenMobile'>
-        <li>About Us</li>
-        <li>Contact</li>
+        <li>ABOUT US</li>
+        <li>CONTACT</li>
       </ul>
     </nav>
   </div>
@@ -65,11 +72,11 @@ return (
             </div>
 
             <ul id={locationChecked ? 'location-pressed' : 'location-notPressed' } className='slide'>
-            <span className="location_arrow_box"></span>
+              <span className="location_arrow_box"></span>
               <div className="slide-container">
 
                 <div className="search-container">
-                  <p className='search-location'>Search</p>
+                  <p className='search-location'>SEARCH</p>
                   <div className='input-container'>
                     <input placeholder={'city & state or zip'} type="text" id="location-input" />
                     <button className='goBtn'>GO</button>
@@ -94,8 +101,18 @@ return (
           </label>
 
           <ul className='menu__box'>
-            <li><a className='menu menu__item' href='#'>MENU <i class="fa-solid fa-greater-than more-menu"></i></a></li>
-            {/* Dropdown */}
+            <li><a onClick={handleSideOpen} className='menu menu__item' href='#'>MENU <i
+                  class="fa-solid fa-greater-than more-menu"></i></a></li>
+            {/* SIDE MENU DROPDOWN */}
+            <div id={menuSideOpen ? 'menu-side-open' : 'menu-side-closed' } className="side-menu-dropdown">
+              <button onClick={handleSideOpen} className='menuBackBtn'>back</button>
+              <ul>
+
+              </ul>
+            </div>
+
+
+
             <li><a className='menu__item' href='#'>CATERING</a></li>
             <li><a className='menu__item' href='#'>GIFT CARDS</a></li>
             <li><a className='menu__item' href='#'>CAREERS</a></li>
@@ -113,33 +130,40 @@ return (
       {/* NAV HIDDEN IN MOBILE */}
       <nav className='main-navList-container hiddenMobile'>
         <ul className='navList'>
-            <div onMouseOver={()=> setMenuOpen(true)} onMouseLeave={() => setMenuOpen(false)} className='dropdown'>
-              <div className='desktop-menu-item menu'>MENU</div>
-              {/* DROPDOWN */}
-              <div onMouseOver={()=> setMenuOpen(true)} onMouseLeave={() => setMenuOpen(false)} id={menuOpen ? 'menu-open' : 'menu-notOpen' } className="menu-dropdown-content">
-                <ul className='list-menu'>
+          <div onMouseOver={()=> setMenuOpen(true)} onMouseLeave={() => setMenuOpen(false)} className='dropdown'>
+            <div className='desktop-menu-item menu'>MENU</div>
+            {/* DROPDOWN */}
+            <div onMouseOver={()=> setMenuOpen(true)} onMouseLeave={() => setMenuOpen(false)} id={menuOpen ? 'menu-open'
+              : 'menu-notOpen' } className="menu-dropdown-content">
+              <ul className='list-menu'>
 
-                  <li className='list-align'><a href='#'><figure><img src={dinners} alt="#" /></figure>
+                <li className='list-align'><a href='#'>
+                    <figure><img src={dinners} alt="#" /></figure>
                   </a>DINNERS</li>
 
-                  <li className='list-align'><a href='#'><figure><img src={individual} alt="#" /></figure>
+                <li className='list-align'><a href='#'>
+                    <figure><img src={individual} alt="#" /></figure>
                   </a>INDIVIDUAL ITEMS</li>
 
-                  <li className='list-align'><a href='#'><figure><img src={groupMeals} alt="#" /></figure>
+                <li className='list-align'><a href='#'>
+                    <figure><img src={groupMeals} alt="#" /></figure>
                   </a>FAMILY MEALS</li>
 
-                  <li className='list-align'><a href='#'><figure><img src={kids} alt="#" /></figure>
+                <li className='list-align'><a href='#'>
+                    <figure><img src={kids} alt="#" /></figure>
                   </a>KIDS</li>
 
-                  <li className='list-align'><a href='#'><figure><img src={breakfast} alt="#" /></figure>
+                <li className='list-align'><a href='#'>
+                    <figure><img src={breakfast} alt="#" /></figure>
                   </a>BREAKFAST</li>
 
-                  <li className='list-align'><a href='#'><figure><img src={desserts} alt="#" /></figure>
+                <li className='list-align'><a href='#'>
+                    <figure><img src={desserts} alt="#" /></figure>
                   </a>DESSERTS & DRINKS</li>
 
-                </ul>
-              </div>
+              </ul>
             </div>
+          </div>
 
           <li className='desktop-menu-item'>CATERING</li>
           <li className='desktop-menu-item'>GIFT CARDS</li>
