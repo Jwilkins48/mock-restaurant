@@ -60,7 +60,7 @@ return (
       <hr className='logo-hr hiddenMobile' />
 
       <div className="mobile-rightSide">
-        {/* LOCATIONS DROPDOWN */}
+        {/* LOCATIONS DROPDOWN START */}
         <button onClick={handleButtonClick} id='locationBtn'></button>
         <div className="locations-hover-container">
           <label className='location-button' htmlFor="locationBtn"><i
@@ -70,7 +70,7 @@ return (
               <h3 className='locations-label'>LOCATIONS</h3>
               <i onClick={handleButtonClick} class="down-arrow fa-solid fa-sort-down"></i>
             </div>
-
+            {/* LOCATIONS DROPDOWN CONTAINER */}
             <ul id={locationChecked ? 'location-pressed' : 'location-notPressed' } className='slide'>
               <span className="location_arrow_box"></span>
               <div className="slide-container">
@@ -105,13 +105,38 @@ return (
                   class="fa-solid fa-greater-than more-menu"></i></a></li>
             {/* SIDE MENU DROPDOWN */}
             <div id={menuSideOpen ? 'menu-side-open' : 'menu-side-closed' } className="side-menu-dropdown">
-              <button onClick={handleSideOpen} className='menuBackBtn'>back</button>
-              <ul>
+              <div onClick={handleSideOpen} className='menuBackBtn'>
+                <i class="fa-solid fa-less-than"></i>
+                <h3>Menu</h3>
+              </div>
 
+              <ul className='side-list-menu'>
+                <li className='side-menu-list'><a href='#'>
+                    <figure><img src={dinners} alt="#" /></figure>
+                  </a>DINNERS</li>
+
+                <li className='side-menu-list'><a href='#'>
+                    <figure><img src={individual} alt="#" /></figure>
+                  </a>INDIVIDUAL ITEMS</li>
+
+                <li className='side-menu-list'><a href='#'>
+                    <figure><img src={groupMeals} alt="#" /></figure>
+                  </a>FAMILY MEALS</li>
+
+                <li className='side-menu-list'><a href='#'>
+                    <figure><img src={kids} alt="#" /></figure>
+                  </a>KIDS</li>
+
+                <li className='side-menu-list'><a href='#'>
+                    <figure><img src={breakfast} alt="#" /></figure>
+                  </a>BREAKFAST</li>
+
+                <li className='side-menu-list'><a href='#'>
+                    <figure><img src={desserts} alt="#" /></figure>
+                  </a>DESSERTS & DRINKS</li>
               </ul>
+
             </div>
-
-
 
             <li><a className='menu__item' href='#'>CATERING</a></li>
             <li><a className='menu__item' href='#'>GIFT CARDS</a></li>
