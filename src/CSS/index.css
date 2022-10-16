@@ -18,7 +18,7 @@ body {
 #Home {
   background-color: var(--homeBlue);
   height: 100vh;
-  background-image: url('../src/imgs/rosas-home.png');
+  background-image: url('../imgs/rosas-home.png');
   background-size: cover;
 }
 

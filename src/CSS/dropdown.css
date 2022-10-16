@@ -165,6 +165,7 @@
     color: rgb(73, 73, 73);
     border-bottom: 2px dashed #000;
     margin-bottom: 15px;
+    cursor: pointer;
 }
 
 
