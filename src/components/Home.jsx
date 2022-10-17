@@ -14,7 +14,7 @@ function Home() {
               <figure className='product-figure'>
                 <img className='product-img' src={taco} alt="taco" />
                 <figcaption className='product-caption'>
-                  <span>tuesdays<br /> <small>were <br /> made for <br /></small>tacos</span>
+                  <span className='caption'>tuesdays<br /> <small>were <br /> made for <br /></small>tacos</span>
                 </figcaption>
               </figure>
 
