@@ -63,6 +63,7 @@
 
     .product-figure {
         margin-left: 7.7rem;
+        position: relative;
     }
 
     .product-img {
@@ -90,19 +91,20 @@
 
     .product-caption {
         position: absolute;
-        bottom: 12rem;
-        left: 35rem;
-        width: 209px;
-        height: 230px;
-        padding: 50px 15px 0 0;
+        bottom: -1.3rem;
+        left: 5rem;
+        width: 300px;
+        height: 260px;
+        padding: 65px 4.5rem 0 0;
         background: url('../imgs/figure-caption.png');
         text-align: center;
         background-repeat: no-repeat;
         font-weight: bold;
+        background-size: 15rem;
     }
 
     .caption{
-        font-size: 35px;
+        font-size: 38px;
         line-height: 1;
         color: #000;
         letter-spacing: .025rem;
