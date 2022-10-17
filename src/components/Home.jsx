@@ -25,7 +25,7 @@ function Home() {
                     for only $5.49 every Tuesday, starting at 10:30 AM! Spice it up the way you like with Rosa’s FREE Salsa Bar.
                   </p>
                   <span className='product-price'>$5.49</span>
-                  <a href='#'>VIEW MENU <i class='ico-arrows'></i></a>
+                  <a className='view-menu-btn' href='#'>VIEW MENU <i class='ico-arrows menu-arrow'></i></a>
                 </div>
               
               </div>

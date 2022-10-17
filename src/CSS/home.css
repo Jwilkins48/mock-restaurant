@@ -1,4 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Oswald:wght@400;500;600&family=Quicksand&family=Raleway&family=Yomogi&display=swap');.product-img {
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Lato:wght@400;700&family=Oswald:wght@400;500;600&family=Quicksand&family=Raleway&family=Staatliches&family=Yomogi&display=swap');
+
+:root {
+    --homeBlue: #41b7c3;
+
+    --fontColor: #ef5da2;
+}
+
+
+.product-img {
     width: 370px;
     margin-top: 9rem;
 }
@@ -8,9 +17,11 @@
     justify-content: center;
     align-items: center;
 }
-.product-figure{
+
+.product-figure {
     margin: 0;
 }
+
 /* .home-display-container::after{
     content: '';
     position: absolute;
@@ -24,7 +35,7 @@
 } */
 
 @media(min-width: 1280px) {
-    .home-display-container{
+    .home-display-container {
         display: flex;
         flex-flow: nowrap;
         justify-content: center;
@@ -34,6 +45,7 @@
         padding-top: 80px;
         transition: all .4s;
     }
+
     .inner-display {
         display: flex;
         flex-flow: row nowrap;
@@ -44,14 +56,17 @@
         width: 85rem;
         height: 37.5rem;
     }
-    .product-figure{
+
+    .product-figure {
         margin-left: 7.7rem;
     }
+
     .product-img {
         width: 570px;
         margin-top: .75rem;
     }
-    .product-content{
+
+    .product-content {
         width: 500px;
         margin-left: 2rem;
         display: flex;
@@ -59,34 +74,75 @@
         justify-content: center;
         height: 100%;
     }
-    .product-content::before{
+
+    .product-content::before {
         content: '';
         width: 2rem;
         height: 70%;
         margin: auto;
-        background-color: rgba(209,209,209,.56);
+        background-color: rgba(209, 209, 209, .56);
     }
-    .product-caption{
+
+    .product-caption {
         margin: -9rem 0 0 10rem;
     }
-    .content-container{
+
+    .content-container {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: flex-start;
-        margin: 0 0 6rem 40px;
+        margin: 5rem 0 6rem 45px;
     }
-    .content-header{
-        font-family: 'Oswald', sans-serif;
-        font-size: 26px;
-        letter-spacing: 1px;
-        margin-bottom: 10px;
+
+    .content-header {
+        font-family: 'Staatliches', cursive;
+        font-size: 28px;
+        letter-spacing: 2px;
+        margin: 25px 0 10px 0px
     }
-    .home-message{
+
+    .home-message {
         margin-bottom: 31px;
         margin-top: 0;
-        font-size: 25px;
+        font-size: 24.5px;
         font-family: 'Quicksand', sans-serif;
-        
+    }
+
+    .product-price {
+        font-family: 'Handlee', cursive;
+        letter-spacing: -5px;
+        color: #000;
+        line-height: 1;
+        font-size: 60px;
+        margin-bottom: 35px;
+        display: block;
+    }
+
+    .view-menu-btn {
+        font-size: 44px;
+        line-height: 1;
+        color: var(--fontColor);
+        list-style-type: none;
+        text-decoration: none;
+        font-family: 'Yomogi', cursive;
+        font-weight: bolder;
+        text-shadow: 0 1px 1px rgb(0 0 0 / 66%);
+        transition: opacity .3s;
+    }
+    .view-menu-btn:hover{
+        opacity: .5;
+    }
+
+    .menu-arrow {
+        background-image: url('../imgs/sprite.png');
+        background-position: 27.21311475409836% 78.2051282051282%;
+        background-size: 971.4285714285713% 1833.3333333333333%;
+        width: 35px;
+        height: 18px;
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 0;
+        margin-left: -10px;
     }
 }
