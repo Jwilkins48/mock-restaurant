@@ -64,6 +64,7 @@
     .product-figure {
         margin-left: 7.7rem;
         position: relative;
+        z-index: -1;
     }
 
     .product-img {
