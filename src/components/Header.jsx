@@ -1,6 +1,6 @@
 import logo from '../imgs/rosas-logo1.png'
 import '../CSS/dropdown.css'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import dinners from '../imgs/_Dinners.png'
 import individual from '../imgs/_individual_items.png'
 import groupMeals from '../imgs/_group_meals.png'
@@ -15,6 +15,7 @@ const [locationChecked, setLocationChecked] = useState(false);
 const [menuOpen, setMenuOpen] = useState(false);
 const [menuSideOpen, setMenuSideOpen] = useState(false);
 
+const [navScroll, setNavScroll] = useState(false);
 
 const styles = {
   dropdownNav:{
@@ -26,6 +27,20 @@ const styles = {
     transitionDuration: '.35s',
   }
 }
+
+const handleOnScroll = () => {
+  console.log(window.scrollY)
+  if (window.scrollY >= 30) {
+    setNavScroll(true)
+  } else {
+    setNavScroll(false)
+  }
+}
+useEffect(() => {
+  handleOnScroll()
+  // add event on scroll
+  window.addEventListener("scroll", handleOnScroll)
+})
 
 const handleCheckbox = () => {
   setMenuSideOpen(false)
@@ -52,7 +67,7 @@ return (
     </nav>
   </div>
 
-  <div style={styles.dropdownNav} className="bottom-header-container">
+  <div id={navScroll ? 'navBar-scroll' : 'navBar-noScroll'} style={styles.dropdownNav} className="bottom-header-container">
     <div className="bottom-header-items">
       <a href='#Home' className="main-logo">
         <img width='150px' src={logo} alt='logo' className='logo'></img>

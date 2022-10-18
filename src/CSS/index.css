@@ -76,6 +76,24 @@ body {
   .location-label-container {
     display: block;
   }
+  .locations-label::before{
+    content: '';
+    bottom: -1.8rem;
+    left: -5rem;
+    position: absolute;
+    width: 3px;
+    height: 82px;
+    background-color: #bfbfbf;
+  }
+  .down-arrow::after{
+    content: '';
+    left: 3rem;
+    bottom: -2.2rem;
+    position: absolute;
+    width: 3px;
+    height: 82px;
+    background-color: #bfbfbf;
+  }
 
   .locations-label {
     position: fixed;
@@ -107,7 +125,7 @@ body {
     padding-right: 33rem;
   }
 
-  .logo-hr {
+  /* .logo-hr {
     background-color: #bfbfbf;
     width: 3px;
     height: 82px;
@@ -119,7 +137,7 @@ body {
   .hr2 {
     left: 58rem;
     top: 4.1rem;
-  }
+  } */
 
   .main-logo {
     position: fixed;
@@ -132,6 +150,12 @@ body {
 
   .main-navList-container {
     display: block;
+  }
+
+  /* ON SCROLL */
+  #navBar-scroll{
+    /* top: 5px; */
+    height: 6.5rem
   }
 
 
