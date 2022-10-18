@@ -95,9 +95,9 @@ return (
 
         {/* HAMBURGER MENU */}
         <div className="hamburger-menu">
-          <input checked={checked} type="checkbox" id='menu__toggle' />
-          <label style={styles.dropdownBtn} class="menu__btn" htmlFor="menu__toggle">
-            <span onClick={handleCheckbox}></span>
+          <input checked={checked}  type="checkbox" id='menu__toggle' />
+          <label onClick={handleCheckbox} style={styles.dropdownBtn} class="menu__btn" htmlFor="menu__toggle">
+            <span></span>
           </label>
 
           <ul className='menu__box'>
