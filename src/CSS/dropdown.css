@@ -54,9 +54,11 @@
 }
 
 .menu__btn {
+    background: transparent;
+    border: none;
     position: fixed;
-    top: 72px;
-    right: 20px;
+    top: 61.5px;
+    right: 22px;
     width: 26px;
     height: 26px;
     cursor: pointer;
@@ -90,7 +92,7 @@
     top: 4.9rem;
     right: -100%;
     width: 375px;
-    height: 50rem;
+    min-height: 100vh;
     margin: 0;
     padding: 5px 0;
     list-style: none;
@@ -127,7 +129,7 @@
     top: 4.9rem;
     right: -100%;
     width: 375px;
-    height: 50rem;
+    min-height: 100vh;
     margin: 0;
     padding: 5px 0;
     list-style: none;
@@ -135,6 +137,9 @@
     box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
     transition-duration: .35s;
     background-image: url('../imgs/menu-dropdown.png');
+}
+.individual{
+    margin-top: 30px;
 }
 
 #menu-side-open {
@@ -193,7 +198,7 @@
     top: 3.3rem;
     left: 0px;
     width: 100%;
-    z-index: -3;
+    z-index: -1;
     background-color: #ffffffb5;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
     transition-duration: .35s;
@@ -202,6 +207,7 @@
 
 #location-notPressed {
     opacity: 0;
+    visibility: hidden;
 }
 
 #location-pressed {
@@ -386,7 +392,6 @@
 
 
     .locations-hover-container:hover .slide {
-        z-index: 1;
         transition-duration: .35s;
         opacity: 1;
     }

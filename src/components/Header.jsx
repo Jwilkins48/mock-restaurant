@@ -22,12 +22,13 @@ const styles = {
     transitionDuration: '.35s',
   },
   dropdownBtn:{
-    top: checked ? '42px' : null,
+    top: checked ? '32px' : null,
     transitionDuration: '.35s',
   }
 }
 
 const handleCheckbox = () => {
+  setMenuSideOpen(false)
   setChecked(!checked)
 }
 // LOCATION DROPDOWN BTN
@@ -96,9 +97,9 @@ return (
         {/* HAMBURGER MENU */}
         <div className="hamburger-menu">
           <input checked={checked}  type="checkbox" id='menu__toggle' />
-          <label onClick={handleCheckbox} style={styles.dropdownBtn} class="menu__btn" htmlFor="menu__toggle">
+          <button onClick={handleCheckbox} style={styles.dropdownBtn} class="menu__btn" htmlFor="menu__toggle">
             <span></span>
-          </label>
+          </button>
 
           <ul className='menu__box'>
             <li><a onClick={handleSideOpen} className='menu menu__item' href='#'>MENU <i
@@ -115,7 +116,7 @@ return (
                     <figure><img src={dinners} alt="#" /></figure>
                   </a>DINNERS</li>
 
-                <li className='side-menu-list'><a href='#'>
+                <li className='side-menu-list individual'><a href='#'>
                     <figure><img src={individual} alt="#" /></figure>
                   </a>INDIVIDUAL ITEMS</li>
 
