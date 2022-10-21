@@ -6,7 +6,6 @@
     --fontColor: #ef5da2;
 }
 
-
 .product-img {
     width: 370px;
     margin-top: 9rem;
@@ -22,7 +21,7 @@
     margin: 0;
 }
 
-.home-display-container::after{
+.home-display-container::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -35,10 +34,11 @@
 }
 
 @media(min-width: 1280px) {
-    #Home{
+    #Home {
         z-index: 2;
         position: relative;
     }
+
     .home-display-container {
         display: flex;
         flex-flow: nowrap;
@@ -104,14 +104,15 @@
         background-size: 15rem;
     }
 
-    .caption{
+    .caption {
         font-size: 38px;
         line-height: 1;
         color: #000;
         letter-spacing: .025rem;
         text-transform: uppercase;
     }
-    .caption small{
+
+    .caption small {
         margin: 5px 0;
         display: inline-block;
         font-size: 15px;
@@ -163,7 +164,8 @@
         text-shadow: 0 1px 1px rgb(0 0 0 / 66%);
         transition: opacity .3s;
     }
-    .view-menu-btn:hover{
+
+    .view-menu-btn:hover {
         opacity: .5;
     }
 

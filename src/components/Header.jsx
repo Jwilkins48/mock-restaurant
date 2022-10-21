@@ -70,7 +70,7 @@ return (
   <div id={navScroll ? 'navBar-scroll' : 'navBar-noScroll'} style={styles.dropdownNav} className="bottom-header-container">
     <div className="bottom-header-items">
       <a href='#Home' className="main-logo">
-        <img width='150px' src={logo} alt='logo' className='logo'></img>
+        <img width={navScroll ? '150px' : '213px'} src={logo} alt='logo' className='logo'></img>
       </a>
 
       {/* <hr className='logo-hr hiddenMobile' /> */}
@@ -79,7 +79,7 @@ return (
         {/* LOCATIONS DROPDOWN START */}
         <button onClick={handleButtonClick} id='locationBtn'></button>
 
-        <div className="locations-hover-container">
+        <div id={navScroll ? 'navBar-scroll-location' : 'navBar-noScroll-location'} className="locations-hover-container">
           <label className='location-button' htmlFor="locationBtn"><i
             class="fa-solid fa-location-dot locationLogo"></i>
           </label>
@@ -92,7 +92,7 @@ return (
             </div>
 
             {/* LOCATIONS DROPDOWN CONTAINER */}
-            <ul id={locationChecked ? 'location-pressed' : 'location-notPressed' } className='slide'>
+            <ul id={locationChecked ? 'location-pressed' : 'location-notPressed' } className={navScroll ? 'navBar-scroll-slide slide' : 'slide'}>
               <span className="location_arrow_box"></span>
               <div className="slide-container">
 

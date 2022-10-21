@@ -18,7 +18,6 @@ body {
 }
 
 #Home {
-  /* overflow: hidden; */
   position: relative;
   background-color: var(--homeBlue);
   height: 100vh;
@@ -43,11 +42,6 @@ body {
   color: var(--homeBlue);
 }
 
-/* .main-logo {
-  margin-left: 15px;
-  margin-top: 8px;
-} */
-
 .mobile-rightSide {
   margin-right: 20px;
   height: 28px;
@@ -60,7 +54,6 @@ body {
 .hiddenMobile {
   display: none;
 }
-
 
 @media(min-width: 1280px) {
 
@@ -76,13 +69,10 @@ body {
     transform: rotate(-15deg);
   }
 
-
-
   .location-label-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* position: fixed; */
   }
 
   .locations-hover-container::before {
@@ -92,6 +82,13 @@ body {
     width: 3px;
     height: 82px;
     background-color: #bfbfbf;
+    transition: .5s;
+  }
+  #navBar-scroll-location::before{
+    height: 40%;
+  }
+  #navBar-scroll-location::after{
+    height: 40%;
   }
 
   .locations-hover-container::after {
@@ -102,6 +99,7 @@ body {
     width: 3.1px;
     height: 82px;
     background-color: #bfbfbf;
+    transition: .5s;
   }
 
   .locations-label {
@@ -134,27 +132,13 @@ body {
     padding-right: 33rem;
   }
 
-  /* .logo-hr {
-    background-color: #bfbfbf;
-    width: 3px;
-    height: 82px;
-    left: 44rem;
-    position: fixed;
-    display: block;
-  }
-
-  .hr2 {
-    left: 58rem;
-    top: 4.1rem;
-  } */
-
   .main-logo {
     margin-left: -50px;
   }
 
-  .logo {
+  /* .logo {
     width: 213px;
-  }
+  } */
 
   .main-navList-container {
     display: block;
@@ -164,14 +148,11 @@ body {
   /* ON SCROLL */
   #navBar-scroll {
     top: 0;
-    border-top: 5px solid var(--homeBlue);
-    height: 6.5rem
+    border-top: 7px solid var(--homeBlue);
+    height: 5rem
   }
 
-
-
   .navList {
-    /* position: fixed; */
     cursor: pointer;
     left: 59rem;
     top: 5.3rem;
