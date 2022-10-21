@@ -73,19 +73,24 @@ return (
         <img width='150px' src={logo} alt='logo' className='logo'></img>
       </a>
 
-      <hr className='logo-hr hiddenMobile' />
+      {/* <hr className='logo-hr hiddenMobile' /> */}
 
       <div className="mobile-rightSide">
         {/* LOCATIONS DROPDOWN START */}
         <button onClick={handleButtonClick} id='locationBtn'></button>
+
         <div className="locations-hover-container">
           <label className='location-button' htmlFor="locationBtn"><i
-              class="fa-solid fa-location-dot locationLogo"></i></label>
+            class="fa-solid fa-location-dot locationLogo"></i>
+          </label>
+
           <div onMouseOver={()=> setLocationChecked(true)} onMouseLeave={() => setLocationChecked(false)}>
+
             <div className=" hiddenMobile location-label-container">
               <h3 className='locations-label'>LOCATIONS</h3>
               <i onClick={handleButtonClick} class="down-arrow fa-solid fa-sort-down"></i>
             </div>
+
             {/* LOCATIONS DROPDOWN CONTAINER */}
             <ul id={locationChecked ? 'location-pressed' : 'location-notPressed' } className='slide'>
               <span className="location_arrow_box"></span>
@@ -93,10 +98,12 @@ return (
 
                 <div className="search-container">
                   <p className='search-location'>SEARCH</p>
+
                   <div className='input-container'>
                     <input placeholder={'city & state or zip'} type="text" id="location-input" />
                     <button className='goBtn'>GO</button>
                   </div>
+
                 </div>
 
                 <h4 className='current-location'><span><i class="fa-solid fa-location-arrow location-arrow"></i></span>
@@ -104,9 +111,10 @@ return (
                   CURRENT LOCATION</h4>
               </div>
             </ul>
+
           </div>
 
-          <hr className='logo-hr hr2 hiddenMobile' />
+          {/* <hr className='logo-hr hr2 hiddenMobile' /> */}
         </div>
 
         {/* HAMBURGER MENU */}

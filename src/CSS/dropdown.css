@@ -219,11 +219,6 @@
     opacity: 1;
 }
 
-.location-button {
-    position: fixed;
-    right: 62px;
-}
-
 #locationBtn {
     position: absolute;
     right: 52px;
@@ -327,7 +322,7 @@
         justify-content: center;
         visibility: hidden;
         top: 6rem;
-        left: -59rem;
+        right: 0;
         width: 130rem;
         height: 16rem;
         opacity: 0;
@@ -385,11 +380,18 @@
     #menu-open {
         visibility: visible;
         opacity: 1;
-        top: 4rem;
+        top: 7.5rem;
     }
 
     /* MENU DROPDOWN END */
 
+    .locations-hover-container{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
 
     .locations-hover-container:hover .slide {
         transition-duration: .35s;
@@ -417,16 +419,13 @@
     }
 
     .location-button {
-        left: 46rem;
+        margin: 0 0 50px 5rem;
     }
 
     .slide {
         z-index: -1;
-        top: 6.5rem;
-        left: 36.6rem;
         width: 465px;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         padding: 30px 35px 5px;
-
     }
 }
