@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Handlee&family=Lato:wght@400;700&family=Oswald:wght@400;500;600&family=Quicksand&family=Raleway&family=Staatliches&family=Yomogi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
 :root {
     --homeBlue: #41b7c3;
@@ -273,27 +274,49 @@
 
     /* WE CATER SECTION */
     .cater-container{
-        width: 60%;
-        margin: auto;
-        padding-bottom: 50px;
-    }
-    .cater-inner-section{
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
+        padding-bottom: 30px;
     }
     .van-img{
-        margin-top: -70px;
+        margin: -5.5rem 0 0 9rem;
     }
-    .van-cater-section{
-       
+    .cater-content-section{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: -4rem 0 0 50px;
     }
     .cater-content-section h1{
+        font-family: 'Yomogi', cursive;
         font-size: 60px;
-        width: auto;
         letter-spacing: .025rem;
-        font-family: 'Handlee', cursive;
+        word-spacing: -20px;
+        margin: 0 ;
+    }
+    .cater-content-section h5{
+        font-size: 30px;
+        color: var(--fontColor);
+        width:75%;
+        word-spacing: -5px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
 
+    .cater-content-section button{
+        font-weight: bold;
+        padding: 6px;
+        width: 65%;
+        margin:auto;
+        font-size: 30px;
+        position: relative;
+        z-index: 2;
+        border: 3px solid #000;
+        border-radius: 10px;
+        background-color: var(--homeBlue);
+        text-align: center;
+        cursor: pointer;
     }
 }
 
