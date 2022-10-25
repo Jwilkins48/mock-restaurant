@@ -214,6 +214,7 @@
 
 #location-pressed {
     opacity: 1;
+    margin-top: 0;
 }
 
 .locations-hover-container:hover .slide {
@@ -410,7 +411,10 @@
         display: flex;
         gap: 5px;
         align-items: center;
+    }
 
+    .location_arrow_box{
+        display:block;
     }
 
     .search-location {

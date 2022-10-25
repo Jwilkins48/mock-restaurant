@@ -36,19 +36,23 @@ body {
 
 .bottom-header-items {
   display: flex;
-  justify-content: center;
   width: 100%;
   align-items: center;
   color: var(--homeBlue);
 }
 
 .mobile-rightSide {
-  margin-right: 20px;
-  height: 28px;
+  margin-left: 9.4rem;
+  margin-top: 8px;
 }
 
 .locationLogo {
   font-size: 30px;
+}
+
+.logo{
+  width: 148px;
+  margin: 10px 0 0 10px;
 }
 
 .hiddenMobile {
@@ -84,12 +88,30 @@ body {
     background-color: #bfbfbf;
     transition: .5s;
   }
-  #navBar-scroll-location::before{
+
+  #navBar-scroll-location::before {
     height: 40%;
   }
-  #navBar-scroll-location::after{
+
+  #navBar-scroll-location::after {
     height: 40%;
   }
+
+  .bottom-header-items {
+    justify-content: center;
+  }
+
+  .mobile-rightSide {
+    margin-left: 0px;
+    margin-top: 2.8rem;
+  }
+  .logo{
+    width: 213px;
+  }
+  .logo-onScroll{
+    width: 150px;
+  }
+  
 
   .locations-hover-container::after {
     content: '';
@@ -135,10 +157,6 @@ body {
   .main-logo {
     margin-left: -50px;
   }
-
-  /* .logo {
-    width: 213px;
-  } */
 
   .main-navList-container {
     display: block;

@@ -70,7 +70,7 @@ return (
   <div id={navScroll ? 'navBar-scroll' : 'navBar-noScroll'} style={styles.dropdownNav} className="bottom-header-container">
     <div className="bottom-header-items">
       <a href='#Home' className="main-logo">
-        <img width={navScroll ? '150px' : '213px'} src={logo} alt='logo' className='logo'></img>
+        <img className={navScroll ? 'logo logo-onScroll' : 'logo'} src={logo} alt='logo'></img>
       </a>
 
       {/* <hr className='logo-hr hiddenMobile' /> */}
@@ -93,7 +93,7 @@ return (
 
             {/* LOCATIONS DROPDOWN CONTAINER */}
             <ul id={locationChecked ? 'location-pressed' : 'location-notPressed' } className={navScroll ? 'navBar-scroll-slide slide' : 'slide'}>
-              <span className="location_arrow_box"></span>
+              <span className="hiddenMobile location_arrow_box"></span>
               <div className="slide-container">
 
                 <div className="search-container">
