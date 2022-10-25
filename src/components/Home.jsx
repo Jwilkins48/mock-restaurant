@@ -2,6 +2,7 @@ import React from 'react'
 import Header from './Header'
 import taco from '../imgs/product-large.png'
 import '../CSS/home.css'
+import CaterSection from './CaterSection'
 
 function Home() {
 return (
@@ -30,12 +31,11 @@ return (
             <span className='product-price'>$5.49</span>
             <a className='view-menu-btn' href='#'>VIEW MENU <i class='ico-arrows menu-arrow'></i></a>
           </div>
-        
-
-
       </div>
     </div>
   </div>
+
+  <CaterSection />
 
 </section>
 )
