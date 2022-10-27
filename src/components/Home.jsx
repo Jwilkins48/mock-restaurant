@@ -3,6 +3,7 @@ import Header from './Header'
 import taco from '../imgs/product-large.png'
 import '../CSS/home.css'
 import CaterSection from './CaterSection'
+import Social from './Social'
 
 function Home() {
 return (
@@ -36,6 +37,7 @@ return (
   </div>
 
   <CaterSection />
+  <Social />
 
 </section>
 )
