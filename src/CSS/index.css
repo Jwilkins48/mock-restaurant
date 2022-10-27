@@ -166,6 +166,8 @@ body {
   /* ON SCROLL */
   #navBar-scroll {
     top: 0;
+    position: fixed;
+    z-index: 3;
     border-top: 7px solid var(--homeBlue);
     height: 5rem
   }

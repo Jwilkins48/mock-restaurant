@@ -1,4 +1,3 @@
-
 :root {
     --homeBlue: #41b7c3;
 
@@ -6,10 +5,11 @@
 }
 
 @media(min-width: 1280px) {
-    .social-section{
+    .social-section {
         padding: 30px 0 54px;
     }
-    .social-inner{
+
+    .social-inner {
         width: 60%;
         margin: auto;
         display: flex;
@@ -17,7 +17,8 @@
         align-items: center;
         flex-flow: row wrap;
     }
-    .social-title{
+
+    .social-title {
         margin: 0 0 8px;
         line-height: 1.3;
         text-align: center;
@@ -25,13 +26,15 @@
         font-size: 70px;
         font-family: 'Amatic SC', cursive;
     }
-    .social-content{
+
+    .social-content {
         position: relative;
         width: 50%;
         padding: 0 15px;
         text-align: center;
     }
-    .content-left::before{
+
+    .content-left::before {
         content: '';
         position: absolute;
         top: 50%;
@@ -42,12 +45,14 @@
         background-color: #b5b5b5;
         transform: translateY(-50%);
     }
-    .social-star{
+
+    .social-star {
         position: relative;
         z-index: 2;
         font-family: 'Amatic SC', cursive;
     }
-    .social-star::before{
+
+    .social-star::before {
         content: '';
         position: absolute;
         z-index: -1;
@@ -60,20 +65,23 @@
         background-position: 0% 33.33333333333333%;
         background-size: 326.9230769230769% 333.33333333333337%;
     }
-    .social-content p{
+
+    .social-content p {
         padding: 0 30px;
         margin: 15px auto;
         font-size: 26px;
         width: 80%;
         font-family: 'Quicksand', sans-serif;
     }
-    .social-content h4{
+
+    .social-content h4 {
         color: var(--fontColor);
         font-size: 30px;
         line-height: .92;
         font-family: 'Yomogi', cursive;
     }
-    .content-left h2{
+
+    .content-left h2 {
         margin: 0 0 8px;
         line-height: 1.3;
         text-align: center;
@@ -83,7 +91,7 @@
         margin-top: 25px;
     }
 
-    .social-btn{
+    .social-btn {
         font-weight: bold;
         padding: 8px 40px;
         display: inline-block;
@@ -97,7 +105,8 @@
         cursor: pointer;
         letter-spacing: .05em;
     }
-    .social-btn::before{
+
+    .social-btn::before {
         content: '';
         position: absolute;
         top: 0;
@@ -109,7 +118,121 @@
         transition: width .3s;
         border-radius: 7px;
     }
-    .social-btn:hover::before{
+
+    .social-btn:hover::before {
         width: 100%;
     }
+
+    .socialMedia {
+        background-image: url('../imgs/rosas-home.png');
+        position: relative;
+        z-index: 2;
+        background-size: 100% auto;
+        background-position: center;
+        background-repeat: repeat-x;
+        background-color: var(--homeBlue);
+    }
+
+    .socialMedia::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        background: url('../imgs/intro-pattern-1.png');
+    }
+
+    .socialMedia-section-inner {
+        padding: 55px 0 20px;
+    }
+
+    .socials ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+        
+    }
+
+    .socials ul li {
+        margin: 0 33px;
+        text-align: center;
+        font-size: 18px;
+        line-height: 1.8;
+        color: #000;
+        
+    }
+
+    .socials ul li span {
+        border: 5px #000 solid;
+        border-radius: 5px;
+        background-color: var(--fontColor);
+        width: 118px;
+        height: 118px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .socials p{
+        font-family: 'Quicksand', sans-serif;
+        font-weight: bold;
+    }
+
+    .socialMedia-section-inner::before {
+        content: '';
+        position: absolute;
+        top: -5px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 16px;
+        background: url('../imgs/dots.png');
+    }
+
+    .socialMedia-section-inner::after {
+        content: '';
+        position: absolute;
+        bottom: -8px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 16px;
+        background: url('../imgs/dots.png');
+    }
+
+    .facebook {
+        background-image: url('../imgs/sprite.png');
+        background-position: 93.89067524115757% 48.3271375464684%;
+        background-size: 1172.4137931034481% 540.983606557377%;
+        width: 29px;
+        height: 61px;
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 0;
+    }
+
+    .instagram {
+        background-image: url('../imgs/sprite.png');
+        background-position: 0% 88.40579710144928%;
+        background-size: 629.6296296296297% 611.1111111111111%;
+        width: 54px;
+        height: 54px;
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 0;
+    }
+
+    .twitter {
+        background-image: url('../imgs/sprite.png');
+        background-position: 80.88235294117648% 25.09090909090909%;
+        background-size: 500% 600%;
+        width: 68px;
+        height: 55px;
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 0;
+    }
+
 }
