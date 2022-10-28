@@ -1,6 +1,7 @@
 import React from 'react'
 import '../CSS/social.css'
 import card from '../imgs/gift-card.png'
+import event from '../imgs/event-img.png'
 
 function Social() {
 return (
@@ -48,6 +49,21 @@ return (
                 </div>
             </div>
         </div>
+    </section>
+
+    <section className="event-section">
+        <div className="event-container">
+            <div className="event-inner">
+                <figure className='event-img'><img src={event} alt="dinner plate" /></figure>
+
+                <div className="event-content">
+                    <h3>YOU'LL LOVE OUR BREAKFAST TACOS, BOWLS, AND PLATES!</h3>
+                    <h4 className='event-subtitle'>6:30 - 10:30 a.m. daily</h4>
+                    <button className='social-btn'>VIEW THE MENU</button>
+                </div>
+            </div>
+        </div>
+
     </section>
 </div>
 )
