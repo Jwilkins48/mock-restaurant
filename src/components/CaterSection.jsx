@@ -19,18 +19,18 @@ return (
     <div className="gallery-section">
         <div className="gallery-content">
             <div className="all-gallery-items">
-                <div className="gallery-item"><figure className="gallery-item-img"><img alt='gallery img 1' src={require('../imgs/gallery-section/gallery-1.jpg')}></img></figure></div>
-                <div className="gallery-item"><figure className="gallery-item-img"><img alt='gallery img 2' src={require('../imgs/gallery-section/gallery-2.jpg')}></img></figure></div>
-                <div className="gallery-item"><figure className="gallery-item-img"><img alt='gallery img 3' src={require('../imgs/gallery-section/gallery-3.jpg')}></img></figure></div>
-                <div className="gallery-item"><figure className="gallery-item-img"><img alt='gallery img 4' src={require('../imgs/gallery-section/gallery-4.jpg')}></img></figure></div>
-                <div className="gallery-item"><figure className="gallery-item-img"><img alt='gallery img 5' src={require('../imgs/gallery-section/gallery-5.jpg')}></img></figure></div>
-                <div className="gallery-item"><figure className="gallery-item-img"><img alt='gallery img 6' src={require('../imgs/gallery-section/gallery-6.jpg')}></img></figure></div>
-                <div className="gallery-item"><figure className="gallery-item-img"><img alt='gallery img 7' src={require('../imgs/gallery-section/gallery-7.jpg')}></img></figure></div>    
-                <div className="gallery-item"><figure className="gallery-item-img"><img alt='gallery img 8' src={require('../imgs/gallery-section/gallery-8.jpg')}></img></figure></div>     
-                <div className="gallery-item"><figure className="gallery-item-img"><img alt='gallery img 9' src={require('../imgs/gallery-section/gallery-9.jpg')}></img></figure></div>               
-                <div className="gallery-item"><figure className="gallery-item-img"><img alt='gallery img 10' src={require('../imgs/gallery-section/gallery-10.jpg')}></img></figure></div>                
-                <div className="gallery-item"><figure className="gallery-item-img"><img alt='gallery img 11' src={require('../imgs/gallery-section/gallery-11.jpg')}></img></figure></div>                
-                <div className="gallery-item"><figure className="gallery-item-img"><img alt='gallery img 12' src={require('../imgs/gallery-section/gallery-12.jpg')}></img></figure></div>
+                <div className="gallery-item"><figure className="gallery-item-img gallery1"><a href='/'></a></figure></div>
+                <div className="gallery-item"><figure className="gallery-item-img gallery2"><a href='/'></a></figure></div>
+                <div className="gallery-item"><figure className="gallery-item-img gallery3"><a href='/'></a></figure></div>
+                <div className="gallery-item"><figure className="gallery-item-img gallery4"><a href='/'></a></figure></div>
+                <div className="gallery-item"><figure className="gallery-item-img gallery5"><a href='/'></a></figure></div>
+                <div className="gallery-item"><figure className="gallery-item-img gallery6"><a href='/'></a></figure></div>
+                <div className="gallery-item"><figure className="gallery-item-img gallery7"><a href='/'></a></figure></div>     
+                <div className="gallery-item"><figure className="gallery-item-img gallery8"><a href='/'></a></figure></div>               
+                <div className="gallery-item"><figure className="gallery-item-img gallery9"><a href='/'></a></figure></div>                
+                <div className="gallery-item"><figure className="gallery-item-img gallery10"><a href='/'></a></figure></div>                
+                <div className="gallery-item"><figure className="gallery-item-img gallery11"><a href='/'></a></figure></div>
+                <div className="gallery-item"><figure className="gallery-item-img gallery12"><a href='/'></a></figure></div>
             </div>
         </div>
 

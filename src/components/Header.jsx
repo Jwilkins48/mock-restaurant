@@ -120,7 +120,7 @@ return (
         {/* HAMBURGER MENU */}
         <div className="hamburger-menu">
           <input checked={checked}  type="checkbox" id='menu__toggle' />
-          <button onClick={handleCheckbox} style={styles.dropdownBtn} class="menu__btn" htmlFor="menu__toggle">
+          <button id={navScroll ? 'navBar-btn-scroll' : 'navBar-btn-noScroll'} onClick={handleCheckbox} style={styles.dropdownBtn} class="menu__btn" htmlFor="menu__toggle">
             <span></span>
           </button>
 
