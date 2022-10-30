@@ -176,8 +176,123 @@
     margin: 0 auto;
 }
 
+.socialMedia {
+    background-image: url('../imgs/rosas-home.png');
+    position: relative;
+    z-index: 2;
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: repeat-x;
+    background-color: var(--homeBlue);
+}
+.socialMedia::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: url('../imgs/intro-pattern-1.png');
+}
+.socialMedia-container {
+    padding: 0 10px;
+}
+.socialMedia-section-inner {
+    padding: 30px 0 15px;
+}
 
+.socials ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin: 10px 42px 10px 0;
+}
 
+.socials ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 15px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #000;
+}
+
+.socials ul li span {
+    border: 2px #000 solid;
+    border-radius: 5px;
+    background-color: var(--fontColor);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.socials p {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    margin: 0;
+    font-size: 12px;
+}
+.facebook {
+    background-image: url('../imgs/sprite.png');
+    background-position: 93.89067524115757% 48.3271375464684%;
+    background-size: 1172.4137931034481% 540.983606557377%;
+    width: 15px;
+    height: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0;
+}
+
+.instagram {
+    background-image: url('../imgs/sprite.png');
+    background-position: 0% 88.40579710144928%;
+    background-size: 629.6296296296297% 611.1111111111111%;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0;
+}
+
+.twitter {
+    background-image: url('../imgs/sprite.png');
+    background-position: 80.88235294117648% 25.09090909090909%;
+    background-size: 500% 600%;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0;
+}
+
+.socialMedia-section-inner::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 16px;
+    background: url('../imgs/dots.png');
+}
+
+.socialMedia-section-inner::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 3px;
+    right: 0rem;
+    width: 100%;
+    height: 16px;
+    background: url('../imgs/dots.png');
+}
 
 @media(min-width: 1280px) {
     .social-section {
@@ -278,7 +393,7 @@
         width: 100%;
     }
 
-    .socialMedia {
+    /* .socialMedia {
         background-image: url('../imgs/rosas-home.png');
         position: relative;
         z-index: 2;
@@ -286,9 +401,9 @@
         background-position: center;
         background-repeat: repeat-x;
         background-color: var(--homeBlue);
-    }
+    } */
 
-    .socialMedia::before {
+    /* .socialMedia::before {
         content: '';
         position: absolute;
         top: 0;
@@ -297,7 +412,7 @@
         width: 100%;
         height: 100%;
         background: url('../imgs/intro-pattern-1.png');
-    }
+    } */
 
     .socialMedia-section-inner {
         padding: 55px 0 20px;
@@ -308,6 +423,7 @@
         justify-content: center;
         align-items: center;
         list-style-type: none;
+        margin: 16px 42px 30px 0;
     }
 
     .socials ul li {
@@ -316,10 +432,9 @@
         font-size: 18px;
         line-height: 1.8;
         color: #000;
+    } 
 
-    }
-
-    .socials ul li span {
+     .socials ul li span {
         border: 5px #000 solid;
         border-radius: 5px;
         background-color: var(--fontColor);
@@ -328,15 +443,15 @@
         display: flex;
         justify-content: center;
         align-items: center;
-    }
+    } 
 
-    .socials p {
+     .socials p {
         font-family: 'Quicksand', sans-serif;
         font-weight: bold;
         margin: 0;
     }
 
-    .socialMedia-section-inner::before {
+     .socialMedia-section-inner::before {
         content: '';
         position: absolute;
         top: -5px;
@@ -356,9 +471,9 @@
         width: 100%;
         height: 16px;
         background: url('../imgs/dots.png');
-    }
+    } 
 
-    .facebook {
+     .facebook {
         background-image: url('../imgs/sprite.png');
         background-position: 93.89067524115757% 48.3271375464684%;
         background-size: 1172.4137931034481% 540.983606557377%;
@@ -389,7 +504,7 @@
         display: inline-block;
         vertical-align: middle;
         font-size: 0;
-    }
+    } */
 
     /* EVENT SECTION */
     .event-section::before {
