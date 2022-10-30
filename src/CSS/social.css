@@ -223,7 +223,7 @@
 }
 
 .socials ul li span {
-    border: 2px #000 solid;
+    border: 3px #000 solid;
     border-radius: 5px;
     background-color: var(--fontColor);
     width: 40px;
@@ -294,6 +294,74 @@
     background: url('../imgs/dots.png');
 }
 
+
+
+.event-section::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 55%;
+    left: 50%;
+    width: 1366px;
+    height: 768px;
+    background: url('../imgs/shadow-white.png');
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.event-section::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 32px;
+    background: url('../imgs/homePageAfter.png');
+}
+
+.event-section {
+    background-image: url('../imgs/section-bg.png');
+    position: relative;
+    z-index: 1;
+    padding-top: 25px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.event-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.event-content h3 {
+    margin: 10px;
+    font-size: 40px;
+    letter-spacing: -1px;
+    line-height: 1;
+    margin-bottom: 0;
+}
+
+.event-subtitle {
+    margin: 0 0 19px;
+    color: var(--fontColor);
+    font-size: 20px;
+    letter-spacing: -.04em;
+    margin-top: 10px;
+}
+
+.event-content button{
+    width: 160px;
+    padding: 5px;
+    margin-bottom: 25px;
+}
+
+.event-content .social-btn{
+    width: 16rem;
+}
 @media(min-width: 1280px) {
     .social-section {
         padding: 30px 0 54px;
@@ -393,26 +461,6 @@
         width: 100%;
     }
 
-    /* .socialMedia {
-        background-image: url('../imgs/rosas-home.png');
-        position: relative;
-        z-index: 2;
-        background-size: 100% auto;
-        background-position: center;
-        background-repeat: repeat-x;
-        background-color: var(--homeBlue);
-    } */
-
-    /* .socialMedia::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        width: 100%;
-        height: 100%;
-        background: url('../imgs/intro-pattern-1.png');
-    } */
 
     .socialMedia-section-inner {
         padding: 55px 0 20px;
@@ -507,19 +555,6 @@
     } */
 
     /* EVENT SECTION */
-    .event-section::before {
-        content: '';
-        position: absolute;
-        z-index: -1;
-        top: 55%;
-        left: 50%;
-        width: 1366px;
-        height: 768px;
-        background: url('../imgs/shadow-white.png');
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-    }
 
     .event-section::after {
         content: '';
@@ -532,46 +567,40 @@
     }
 
     .event-section {
-        background-image: url('../imgs/section-bg.png');
         position: relative;
         z-index: 1;
         padding-bottom: 11px;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
     }
 
-    .event-inner {
+    /* .event-inner {
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
-    }
+    } */
 
     .event-img img {
+        width: auto;
         height: 400px;
-        margin: 2rem 0rem -2rem -10rem
+        margin: 2rem 0rem -2rem -14rem
+    } 
+    .event-img{
+        width: auto;
     }
 
     .event-content {
         width: 507px;
-        margin-right: -55px;
+        /* margin-right: -55px; */
+        margin-left: 95px;
         text-align: center;
-        margin-bottom: 100px;
-
     }
 
     .event-subtitle {
-        margin: 0 0 19px;
-        color: var(--fontColor);
         font-size: 38px;
-        letter-spacing: -.04em;
         margin-top: 2px;
     }
 
     .event-content h3 {
         font-size: 35px;
-        line-height: 1.31;
-        margin-bottom: 0;
-    }
+    } 
 }

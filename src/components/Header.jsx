@@ -73,8 +73,6 @@ return (
         <img className={navScroll ? 'logo logo-onScroll' : 'logo'} src={logo} alt='logo'></img>
       </a>
 
-      {/* <hr className='logo-hr hiddenMobile' /> */}
-
       <div className="mobile-rightSide">
         {/* LOCATIONS DROPDOWN START */}
         <button onClick={handleButtonClick} id='locationBtn'></button>
@@ -114,7 +112,6 @@ return (
 
           </div>
 
-          {/* <hr className='logo-hr hr2 hiddenMobile' /> */}
         </div>
 
         {/* HAMBURGER MENU */}

@@ -98,8 +98,8 @@
 }
 
 .content-container {
-    padding-top: 10px;
-    margin: auto;
+    padding-top: 5px;
+    margin: 0 0 15% 5%;
     width: 90%;
 }
 
@@ -270,7 +270,13 @@
 
 /* WE CATER MOBILE SECTION */
 .weCater-section {
-    margin-top: 5rem;
+    margin-top: 2.5rem;
+}
+/* FIREFOX */
+@-moz-document url-prefix() {
+    .weCater-section {
+        margin-top: 7rem;
+    }
 }
 
 .cater-container {
