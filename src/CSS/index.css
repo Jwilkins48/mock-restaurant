@@ -59,6 +59,21 @@ body {
   display: none;
 }
 
+#navBar-scroll {
+  top: 0;
+  position: fixed;
+  z-index: 3;
+  border-top: 7px solid var(--homeBlue);
+  height: 5rem
+}
+#navBar-scroll-location::before {
+  height: 40%;
+}
+
+#navBar-scroll-location::after {
+  height: 40%;
+}
+
 @media(min-width: 1280px) {
 
   /* NAVBAR MENU ITEMS */
@@ -89,13 +104,13 @@ body {
     transition: .5s;
   }
 
-  #navBar-scroll-location::before {
+  /* #navBar-scroll-location::before {
     height: 40%;
   }
 
   #navBar-scroll-location::after {
     height: 40%;
-  }
+  } */
 
   .bottom-header-items {
     justify-content: center;
@@ -164,13 +179,13 @@ body {
   }
 
   /* ON SCROLL */
-  #navBar-scroll {
+  /* #navBar-scroll {
     top: 0;
     position: fixed;
     z-index: 3;
     border-top: 7px solid var(--homeBlue);
     height: 5rem
-  }
+  } */
 
   .navList {
     cursor: pointer;

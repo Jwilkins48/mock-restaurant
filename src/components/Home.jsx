@@ -4,6 +4,7 @@ import taco from '../imgs/product-large.png'
 import '../CSS/home.css'
 import CaterSection from './CaterSection'
 import Social from './Social'
+import Promotional from './Promotional'
 
 function Home() {
 return (
@@ -30,7 +31,7 @@ return (
               Bar.
             </p>
             <span className='product-price'>$5.49</span>
-            <a className='view-menu-btn' href='#'>VIEW MENU <i class='ico-arrows menu-arrow'></i></a>
+            <a className='view-menu-btn' href='/'>VIEW MENU <i class='ico-arrows menu-arrow'></i></a>
           </div>
       </div>
     </div>
@@ -38,6 +39,7 @@ return (
 
   <CaterSection />
   <Social />
+  <Promotional />
 
 </section>
 )
