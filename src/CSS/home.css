@@ -272,12 +272,6 @@
 .weCater-section {
     margin-top: 2.5rem;
 }
-/* FIREFOX */
-@-moz-document url-prefix() {
-    .weCater-section {
-        margin-top: 7rem;
-    }
-}
 
 .cater-container {
     text-align: center;

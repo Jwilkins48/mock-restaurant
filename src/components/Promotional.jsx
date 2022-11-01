@@ -2,6 +2,7 @@ import React from 'react'
 import '../CSS/promotional.css'
 import promoteImg from '../imgs/slide-image-4.jpg'
 import bannerImg from '../imgs/life-is-better.png'
+import envelope from '../imgs/ico-envelope.png'
 
 
 function promotional() {
@@ -25,6 +26,19 @@ function promotional() {
                 </div>
             </div>
         </div>
+
+        <section className='subscribe-section'>
+            <div className="subscribe-container">
+                <div className="subscribe-inner">
+                    <h2 className="subscribe-title">SUBSCRIBE!</h2>
+                    <h5 className="subscribe-subtitle">BECOME A ROSA'S VIP</h5>
+                    <div className="subscribe-input-container">
+                        <img src={envelope} alt='envelope' className='input-icon' />
+                        <input placeholder='enter your email here' type="text" className="subscribe-input" />
+                    </div>
+                </div>
+            </div>
+        </section>
     </section>
   )
 }
