@@ -8,8 +8,7 @@ import kids from '../imgs/_Kids4.png'
 import breakfast from '../imgs/_breakfast.png'
 import desserts from '../imgs/_Desserts.png'
 
-function Header() {
-const [checked, setChecked] = useState(false);
+function Header({checked, setChecked}) {
 const [locationChecked, setLocationChecked] = useState(false);
 
 const [menuOpen, setMenuOpen] = useState(false);

@@ -1,23 +1,28 @@
 import React from 'react'
+import { useState, useEffect } from 'react';
 import Header from './Header'
 import taco from '../imgs/product-large.png'
 import '../CSS/home.css'
 import CaterSection from './CaterSection'
 import Social from './Social'
 import Promotional from './Promotional'
+import 'animate.css';
 
 function Home() {
+  const [backToTop, setBackToTop] = useState(false);
+  const [checked, setChecked] = useState(false);
+
 return (
 <section id='Home'>
-  <Header />
+  <Header setChecked={setChecked} checked={checked} />
 
   <div className="home-display-container">
-    <div className="inner-display">
+    <div className="inner-display ">
       {/* HOME IMAGE */}
       <div className="figure-container">
-        <figure className='product-figure'>
+        <figure className='product-figure '>
           <img className='product-img' src={taco} alt="taco" />
-          <figcaption className='product-caption'>
+          <figcaption style={{display: checked ? 'none' : 'block'}} className='product-caption'>
             <span className='caption'>tuesdays<br /> <small>were <br /> made for <br /></small>tacos</span>
           </figcaption>
         </figure>
@@ -69,7 +74,7 @@ return (
 
         </div>
         <div className="footer-right">
-          <a href='#Home' className='back-to-top-container'>
+          <a onMouseOver={()=> setBackToTop(true)} onMouseLeave={() => setBackToTop(false)} href='#Home' className={ backToTop ? "animate__animated animate__tada back-to-top-container" : 'back-to-top-container'}>
             <i className='to-top-arrow'></i>
             <span>BACK TO TOP</span>
           </a>

@@ -520,6 +520,7 @@ html{
 /* WE CATER SECTION */
 
 @media(min-width: 1280px) {
+
     #Home {
         z-index: 2;
         position: relative;
@@ -684,9 +685,20 @@ html{
 
     .cater-content-section {
         display: flex;
+        display: none;
         flex-direction: column;
         text-align: center;
         margin: -4rem 0 0 50px;
+    }
+    .animate__animated{
+        display: block;
+    }
+
+    .van-cater-section{
+        display: none;
+    }
+    .animate__slideInRight{
+        display: block;
     }
 
     .cater-content-section h1 {
@@ -740,6 +752,7 @@ html{
 
     /* GALLERY START */
 
+
     .all-gallery-items {
         display: flex;
         flex-flow: row wrap;
@@ -747,7 +760,10 @@ html{
         align-items: flex-start;
     }
 
+
+
     .gallery-item {
+        
         padding-bottom: 0;
         position: relative;
         width: 16.66667%;
@@ -843,6 +859,7 @@ html{
     .back-to-top-container{
         margin: 22px 0 48px;
         text-align: center;
+        display: inline-flex;
     }
     .to-top-arrow{
         width: 68px;

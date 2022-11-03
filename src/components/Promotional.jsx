@@ -1,11 +1,39 @@
-import React from 'react'
+import { useState, useEffect } from 'react';
 import '../CSS/promotional.css'
 import promoteImg from '../imgs/slide-image-4.jpg'
 import bannerImg from '../imgs/life-is-better.png'
 import envelope from '../imgs/ico-envelope.png'
 
 
-function promotional() {
+function Promotional() {
+    const [promoteScroll, setPromoteScroll] = useState(false);
+    const [lowerPromoteScroll, setLowerPromoteScroll] = useState(false);
+
+
+    const handleOnPromoteScroll = () => {
+        if (window.scrollY >= 3200) {
+            setPromoteScroll(true)
+        } else {
+            setPromoteScroll(false)
+        }
+    }
+    const handleOnLowPromoteScroll = () => {
+        if (window.scrollY >= 3500) {
+            setLowerPromoteScroll(true)
+        } else {
+            setLowerPromoteScroll(false)
+        }
+    }
+    useEffect(() => {
+        handleOnPromoteScroll()
+        handleOnLowPromoteScroll()
+        // add event on scroll
+        window.addEventListener("scroll", handleOnPromoteScroll)
+        window.addEventListener("scroll", handleOnLowPromoteScroll)
+
+    })
+
+    
   return (
     <section>
         <div className="promote-container">
@@ -21,7 +49,7 @@ function promotional() {
 
         <div className="banner">
             <div className="banner-container">
-                <div className="banner-img">
+                <div className={ promoteScroll ? "banner-img animate__animated animate__zoomIn" : ''}>
                     <img src={bannerImg} alt="rosa's banner" />
                 </div>
             </div>
@@ -29,7 +57,7 @@ function promotional() {
 
         <section className='subscribe-section'>
             <div className="subscribe-container">
-                <div className="subscribe-inner">
+                <div className={ lowerPromoteScroll ? "banner-img animate__animated animate__zoomIn subscribe-inner" : 'subscribe-inner'}>
                     <h2 className="subscribe-title">SUBSCRIBE!</h2>
                     <h5 className="subscribe-subtitle">BECOME A ROSA'S VIP</h5>
                     <div className="subscribe-input-container">
@@ -43,4 +71,4 @@ function promotional() {
   )
 }
 
-export default promotional
+export default Promotional
