@@ -62,14 +62,14 @@ return (
           </div>
 
           <ul className="footer-links">
-            <li className='small-footerLink'>SITE DESIGNED BY ALGO+RHYTHM</li>
-            <li className='footerLink'>PRIVACY POLICY</li>
-            <li className='footerLink'>TERMS OF SERVICE</li>
+            <li className='small-footerLink'>SITE DESIGNED BY ALGO+RHYTHM </li>
+            <li className='footerLink policy'> PRIVACY POLICY </li>
+            <li className='footerLink'> TERMS OF SERVICE </li>
           </ul>
 
         </div>
         <div className="footer-right">
-          <a href className='back-to-top-container'>
+          <a href='#Home' className='back-to-top-container'>
             <i className='to-top-arrow'></i>
             <span>BACK TO TOP</span>
           </a>
