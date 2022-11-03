@@ -300,7 +300,7 @@
     z-index: -1;
     top: 55%;
     left: 50%;
-    width: 400px;
+    width: auto;
     height: 768px;
     background: url('../imgs/shadow-white.png');
     -webkit-transform: translate(-50%, -50%);

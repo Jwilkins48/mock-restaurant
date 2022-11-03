@@ -171,22 +171,6 @@
     }
 
     /* SUBSCRIBE SECTION */
-    /* .subscribe-section {
-        position: relative;
-        padding: 20px 0 50px;
-        background-image: url('../imgs/rosas-home.png');
-        border-top: 5px solid #000;
-        background-size: 100% auto;
-        background-position: center center;
-        background-repeat: repeat-x;
-        background-color: #41b7c3;
-    } */
-    /* .subscribe-container{
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-    } */
     .subscribe-title{
         margin-top: 10px;
         margin-bottom: 15px;
@@ -208,7 +192,7 @@
         height:50px ;
         content: '' ;
         position: absolute ;
-        top: 13px ;
+        top: 10px ;
         left: -3rem ;
         background-size: 100% 100% ;
     
