@@ -807,4 +807,18 @@ html{
         top: 49%;
         right: 34.5%;
     }
+
+    .back-to-top-container{
+        margin: 22px 0 48px;
+        text-align: center;
+    }
+    .to-top-arrow{
+        width: 68px;
+        height: 65px;
+    }
+    .footer-right p{
+        margin: -.5rem 0 10px -10rem;
+        font-size: 24px;
+        font-weight: bold
+    }
 }
