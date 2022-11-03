@@ -485,6 +485,38 @@ html{
     font-weight: 700;
 }
 
+.list-align  span{
+    position: relative;
+}
+.list-align span::before{
+    content: '';
+    visibility: hidden;
+    position: absolute;
+    top: 90%;
+    z-index: -1;
+    left: 50%;
+    width: 189px;
+    height: 98px;
+    margin: -4px 0 0 6px;
+    background: url('../imgs/brush-bg@2x.png');
+    background-size: 100% 100%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    -webkit-transition: opacity .3s,visibility .3s;
+    -o-transition: opacity .3s,visibility .3s;
+    transition: opacity .3s,visibility .3s;
+}
+.list-align span:hover::before{
+    visibility:visible;
+    opacity: 1;
+}
+
+
+
+
+
 /* WE CATER SECTION */
 
 @media(min-width: 1280px) {

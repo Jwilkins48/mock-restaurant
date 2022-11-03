@@ -185,27 +185,27 @@ return (
 
                 <li className='list-align'><a href='#'>
                     <figure><img src={dinners} alt="#" /></figure>
-                  </a>DINNERS</li>
+                  </a><span>DINNERS</span></li>
 
                 <li className='list-align'><a href='#'>
                     <figure><img src={individual} alt="#" /></figure>
-                  </a>INDIVIDUAL ITEMS</li>
+                  </a><span>INDIVIDUAL ITEMS</span></li>
 
                 <li className='list-align'><a href='#'>
                     <figure><img src={groupMeals} alt="#" /></figure>
-                  </a>FAMILY MEALS</li>
+                  </a><span>FAMILY MEALS</span></li>
 
                 <li className='list-align'><a href='#'>
                     <figure><img src={kids} alt="#" /></figure>
-                  </a>KIDS</li>
+                  </a><span>KIDS</span></li>
 
                 <li className='list-align'><a href='#'>
                     <figure><img src={breakfast} alt="#" /></figure>
-                  </a>BREAKFAST</li>
+                  </a><span>BREAKFAST</span></li>
 
                 <li className='list-align'><a href='#'>
                     <figure><img src={desserts} alt="#" /></figure>
-                  </a>DESSERTS & DRINKS</li>
+                  </a><span>DESSERTS & DRINKS</span></li>
 
               </ul>
             </div>
