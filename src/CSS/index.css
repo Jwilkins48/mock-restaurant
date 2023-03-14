@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Yomogi&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Yomogi&display=swap");
 
 :root {
   --homeBlue: #41b7c3;
@@ -8,8 +8,7 @@
 
 * {
   box-sizing: border-box;
-  font-family: 'Yomogi', cursive;
-
+  font-family: "Yomogi", cursive;
 }
 
 body {
@@ -21,7 +20,7 @@ body {
   position: relative;
   background-color: var(--homeBlue);
   height: 100vh;
-  background-image: url('../imgs/rosas-home.png');
+  background-image: url("../imgs/rosas-home.png");
   background-size: cover;
 }
 
@@ -50,7 +49,7 @@ body {
   font-size: 30px;
 }
 
-.logo{
+.logo {
   width: 148px;
   margin: 10px 0 0 10px;
 }
@@ -59,12 +58,16 @@ body {
   display: none;
 }
 
+.appMenu {
+  overflow: hidden;
+}
+
 #navBar-scroll {
   top: 0;
   position: fixed;
   z-index: 3;
   border-top: 7px solid var(--homeBlue);
-  height: 5rem
+  height: 5rem;
 }
 #navBar-scroll-location::before {
   height: 40%;
@@ -74,11 +77,10 @@ body {
   height: 40%;
 }
 
-@media(min-width: 1280px) {
-
+@media (min-width: 1280px) {
   /* NAVBAR MENU ITEMS */
   .desktop-menu-item {
-    transition: .25s ease-in-out;
+    transition: 0.25s ease-in-out;
     font-size: 21px;
   }
 
@@ -95,13 +97,13 @@ body {
   }
 
   .locations-hover-container::before {
-    content: '';
+    content: "";
     position: absolute;
     margin: 0 10rem 50px 0;
     width: 3px;
     height: 82px;
     background-color: #bfbfbf;
-    transition: .5s;
+    transition: 0.5s;
   }
 
   /* #navBar-scroll-location::before {
@@ -119,23 +121,22 @@ body {
     margin-left: 0px;
     margin-top: 2.8rem;
   }
-  .logo{
+  .logo {
     width: 213px;
   }
-  .logo-onScroll{
+  .logo-onScroll {
     width: 150px;
   }
-  
 
   .locations-hover-container::after {
-    content: '';
+    content: "";
     margin: 0 -18.5rem 50px 0;
     margin-left: 20px;
     position: absolute;
     width: 3.1px;
     height: 82px;
     background-color: #bfbfbf;
-    transition: .5s;
+    transition: 0.5s;
   }
 
   .locations-label {
@@ -213,8 +214,5 @@ body {
     font-size: 19px;
     font-weight: bold;
     border-radius: 0 0px 9px 9px;
-
   }
-
 }
-

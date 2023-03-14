@@ -1,6 +1,5 @@
 import React from "react";
 import van from "../imgs/van.png";
-import "animate.css";
 
 function CaterSection() {
   return (
