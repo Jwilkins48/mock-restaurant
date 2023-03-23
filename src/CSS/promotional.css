@@ -64,8 +64,6 @@
   width: 80%;
 }
 
-/* SUBSCRIBE SECTION */
-
 .subscribe-section {
   position: relative;
   padding: 20px 0 50px;
@@ -160,13 +158,10 @@
     font-size: 20px;
   }
 
-  /* BANNER SECTION */
-
   .banner-container img {
     width: 20%;
   }
 
-  /* SUBSCRIBE SECTION */
   .subscribe-title {
     margin-top: 10px;
     margin-bottom: 15px;
