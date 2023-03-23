@@ -78,7 +78,6 @@ body {
 }
 
 @media (min-width: 1280px) {
-  /* NAVBAR MENU ITEMS */
   .desktop-menu-item {
     transition: 0.25s ease-in-out;
     font-size: 21px;
@@ -105,13 +104,6 @@ body {
     background-color: #bfbfbf;
     transition: 0.5s;
   }
-
-  /* #navBar-scroll-location::before {
-    height: 40%;
-  }
-  #navBar-scroll-location::after {
-    height: 40%;
-  } */
 
   .bottom-header-items {
     justify-content: center;
@@ -177,15 +169,6 @@ body {
     display: block;
     margin: -5px 0 0 30px;
   }
-
-  /* ON SCROLL */
-  /* #navBar-scroll {
-    top: 0;
-    position: fixed;
-    z-index: 3;
-    border-top: 7px solid var(--homeBlue);
-    height: 5rem
-  } */
 
   .navList {
     cursor: pointer;
